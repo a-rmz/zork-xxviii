@@ -1,0 +1,168 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company:       Instituto Tecnológico y de Estudios Superiores de Occidente A.C.
+// Engineer:      Alejandro Ramírez Pérez & G. Adrián Toscano Prieto
+//
+// Create Date:    10:04:30 05/10/2016
+// Design Name:
+// Module Name:    game_control
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
+//
+// Dependencies:
+//
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+//
+//////////////////////////////////////////////////////////////////////////////////
+module game_control(
+  input clk_50MHz_i,
+  input rst_async_la_i,
+  input [3:0] key_in,
+
+  output [7:0] address,
+  output [3:0] last_pressed
+    );
+
+  localparam  [3:0] grid_max = 20;
+  localparam  [1:0] UP = 2'b00, DOWN = 2'b01, RIGHT = 2'b10, LEFT = 2'b11;
+
+  wire enable_sum_PX;
+  wire enable_sum_NX;
+  wire enable_sum_PY;
+  wire enable_sum_NY;
+  wire enable_validation_key;
+  wire enable_validation_move;
+  wire enable_save_last;
+  wire enable_count_move;
+  wire [3:0] last_key_pressed;
+
+  reg [1:0] valid_move;
+  reg valid_key;
+  wire movement_direction;
+  reg moved;
+  wire last_key_in;
+
+  reg [3:0] posx;
+  reg [3:0] posy;
+  reg [3:0] new_posx;
+  reg [3:0] new_posy;
+
+
+	assign last_key_in = (key_in != last_key_pressed);
+
+  fsm_movement fsm (
+    .clk_50MHz_i(clk_50MHz_i),
+    .rst_async_la_i(rst_async_la_i),
+    .key_in(key_in),
+    .last_key_in(last_key_in),
+
+    .valid_key(valid_key),
+    .valid_move(valid_move),
+    .movement_direction(movement_direction),
+    .moved(moved),
+    .enable_save_last(enable_save_last),
+
+    .enable_sum_PX(enable_sum_PX),
+    .enable_sum_NX(enable_sum_NX),
+    .enable_sum_PY(enable_sum_PY),
+    .enable_sum_NY(enable_sum_NY),
+
+    .enable_validation_key(enable_validation_key),
+    .enable_validation_move(enable_validation_move),
+
+    .enable_count_move(enable_count_move),
+    .last_pressed(last_key_pressed)
+  );
+
+
+  always @ ( * ) begin
+    if(enable_validation_key == 1'b1)
+      valid_key <= (
+        key_in == 4'h2 |
+        key_in == 4'h6 |
+        key_in == 4'h8 |
+        key_in == 4'h4
+      );
+    else
+      valid_key <= 1'b0;
+  end
+
+  always @ ( * ) begin
+  // Movement in x
+    if( enable_validation_move & enable_sum_PX & enable_sum_NX & (posx > 0) & (posx < grid_max) )
+      valid_move <= 2'b01;
+    else
+  // Movement in y
+    if( enable_validation_move & enable_sum_PY & enable_sum_NY & (posy > 0) & (posy < grid_max) )
+      valid_move <= 2'b10;
+    else
+      valid_move <= 2'b00;
+  end
+
+  // Direction assign
+  assign movement_direction = (
+     (enable_sum_PX & ~enable_sum_NX) |
+     (enable_sum_PY & ~enable_sum_NY)
+   );
+
+  // Position movement block
+  always @ ( * ) begin
+    if(enable_sum_PX == 1'b1)
+    begin
+      new_posx <= posx + 1;
+      moved <= 1'b1;
+    end
+    else
+    if(enable_sum_NX == 1'b1)
+    begin
+      new_posx <= posx - 1;
+      moved <= 1'b1;
+    end
+    else
+    if(enable_sum_PY == 1'b1)
+    begin
+      new_posy <= posy + 1;
+      moved <= 1'b1;
+    end
+    else
+    if(enable_sum_NY == 1'b1)
+    begin
+      new_posy <= posy - 1;
+      moved <= 1'b1;
+    end
+    else
+      moved <= 1'b0;
+  end
+
+  mod_n #(.DW(20), .N(100_000)) move_last_save (
+    .enable_i( enable_count_move ),
+    .clk_50MHz_i( clk_50MHz_i ),
+    .rst_async_la_i( rst_async_la_i ),
+	  .enable_o( enable_save_last )
+  );
+
+  // Final assignment block
+  always @ ( posedge clk_50MHz_i, negedge rst_async_la_i ) begin
+    if(!rst_async_la_i)
+      begin
+        posx <= 4'h7;
+        posy <= 4'h7;
+      end
+    else
+      begin
+        posx <= new_posx;
+        posy <= new_posy;
+      end
+  end
+
+  assign address = {posx, posy};
+  assign last_pressed = last_key_pressed;
+
+
+
+
+  endmodule

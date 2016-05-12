@@ -1,0 +1,317 @@
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/zork/zork.xst" -ofn "C:/Users/Usuario/Desktop/zork/zork.syr" 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_zork.ucf -p xc3s100e-cp132-4 zork.ngc zork.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd zork.pcf 
+par -w -intstyle ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml zork.twx zork.ncd -o zork.twr zork.pcf -ucf constraints_zork.ucf 
+bitgen -intstyle ise -f zork.ut zork.ncd 
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/zork.xst" -ofn "/home/alex/ISE/Projects/zork/zork.syr" 

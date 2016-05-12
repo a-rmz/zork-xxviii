@@ -1,0 +1,52 @@
+Running: /home/alex/ISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/alex/ISE/Projects/zork/zork_game_test_isim_beh.exe" -prj "/home/alex/ISE/Projects/zork/zork_game_test_beh.prj" "work.zork_game_test" "work.glbl" 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/mod_n.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/fsm.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/PIPO.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/one_cold.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/key_decoder.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/font_rom.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/debouncer.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/vga_control.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/labyrynth_rom.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/keyboard_decoder.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/image_driver.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/game_control.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/bin_to_hex.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/zork.v" into library work
+Analyzing Verilog file "/home/alex/ISE/Projects/zork/zork_game_test.v" into library work
+Analyzing Verilog file "/home/alex/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "/home/alex/ISE/Projects/zork/zork_game_test.v" Line 19: Port segments is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/alex/ISE/Projects/zork/debouncer.v" Line 45: Port count_o is not connected to this instance
+Completed static elaboration
+Fuse Memory Usage: 95468 KB
+Fuse CPU Usage: 1220 ms
+Compiling module fsm
+Compiling module mod_n(DW=21,N=1500000)
+Compiling module debouncer
+Compiling module mod_n(DW=22,N=2500000)
+Compiling module mod_n(DW=2,N=4)
+Compiling module one_cold
+Compiling module key_decoder
+Compiling module PIPO
+Compiling module keyboard_decoder
+Compiling module game_control
+Compiling module labyrinth_rom
+Compiling module vga_control
+Compiling module font_rom
+Compiling module image_driver
+Compiling module bin_to_hex
+Compiling module zork
+Compiling module zork_game_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 18 Verilog Units
+Built simulation executable /home/alex/ISE/Projects/zork/zork_game_test_isim_beh.exe
+Fuse Memory Usage: 659980 KB
+Fuse CPU Usage: 1310 ms
+GCC CPU Usage: 80 ms

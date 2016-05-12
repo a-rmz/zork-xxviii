@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/fsm_movement.xst" -ofn "/home/alex/ISE/Projects/zork/fsm_movement.syr" 

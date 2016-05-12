@@ -1,0 +1,46 @@
+
+#ZORK_XXVIII
+NET "clk_50MHz_i" LOC = "B8";
+NET "rst_async_la_i" LOC = "P11";
+
+#KEYBOARD
+#IN
+NET "columns_i[0]" LOC="A9"  | PULLUP;
+NET "columns_i[1]" LOC="B9"  | PULLUP;
+NET "columns_i[2]" LOC="A10"  | PULLUP;
+NET "columns_i[3]" LOC="C9"  | PULLUP;
+
+#OUT
+NET "rows_o[0]"  LOC="C6" | DRIVE=2;
+NET "rows_o[1]"  LOC="B6" | DRIVE=2;
+NET "rows_o[2]"  LOC="C5" | DRIVE=2;
+NET "rows_o[3]"  LOC="B7" | DRIVE=2;
+
+#VGA
+NET "vga_hsync" LOC = "J14";
+NET "vga_vsync" LOC = "K13";
+NET "r_o[2]" LOC = "F13";
+NET "r_o[1]" LOC = "D13";
+NET "r_o[0]" LOC = "C14";
+NET "g_o[2]" LOC = "G14";
+NET "g_o[1]" LOC = "G13";
+NET "g_o[0]" LOC = "F14";
+NET "b_o[1]" LOC = "J13";
+NET "b_o[0]" LOC = "H13";
+
+
+#DISPLAY OUT
+#SEGMENTS
+NET "segments[0]" LOC = "M12"; // g
+NET "segments[1]" LOC = "L13"; // f
+NET "segments[2]" LOC = "P12"; // e
+NET "segments[3]" LOC = "N11"; // d
+NET "segments[4]" LOC = "N14"; // c
+NET "segments[5]" LOC = "H12"; // b
+NET "segments[6]" LOC = "L14"; // a
+
+#TRANSISTORS
+NET "transistors[0]" LOC = "K14";
+NET "transistors[1]" LOC = "M13";
+NET "transistors[2]" LOC = "J12";
+NET "transistors[3]" LOC = "F12";

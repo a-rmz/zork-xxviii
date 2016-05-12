@@ -1,0 +1,3 @@
+verilog isim_temp "fsm_movement.v"
+verilog isim_temp "tb_fsm_mv.v"
+verilog isim_temp "/home/alex/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

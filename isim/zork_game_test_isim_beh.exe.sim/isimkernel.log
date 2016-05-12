@@ -1,0 +1,10 @@
+Command line:
+   zork_game_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  44560
+
+Thu May 12 13:13:45 2016
+
+
+ Elaboration Time: 0.02 sec

@@ -45,48 +45,52 @@ Setup/Hold to clock clk_50MHz_i
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-columns_i<0>|    4.374(R)|   -0.806(R)|clk_50MHz_i_BUFGP |   0.000|
-columns_i<1>|    4.170(R)|   -0.299(R)|clk_50MHz_i_BUFGP |   0.000|
-columns_i<2>|    3.627(R)|    0.262(R)|clk_50MHz_i_BUFGP |   0.000|
-columns_i<3>|    3.705(R)|   -0.003(R)|clk_50MHz_i_BUFGP |   0.000|
+columns_i<0>|    4.198(R)|    0.072(R)|clk_50MHz_i_BUFGP |   0.000|
+columns_i<1>|    4.340(R)|    0.227(R)|clk_50MHz_i_BUFGP |   0.000|
+columns_i<2>|    4.864(R)|    0.708(R)|clk_50MHz_i_BUFGP |   0.000|
+columns_i<3>|    4.036(R)|    0.665(R)|clk_50MHz_i_BUFGP |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk_50MHz_i to Pad
-------------+------------+------------------+--------+
-            | clk (edge) |                  | Clock  |
-Destination |   to PAD   |Internal Clock(s) | Phase  |
-------------+------------+------------------+--------+
-b_o<0>      |   31.269(R)|clk_50MHz_i_BUFGP |   0.000|
-b_o<1>      |   31.253(R)|clk_50MHz_i_BUFGP |   0.000|
-g_o<0>      |   30.754(R)|clk_50MHz_i_BUFGP |   0.000|
-g_o<1>      |   31.011(R)|clk_50MHz_i_BUFGP |   0.000|
-g_o<2>      |   31.011(R)|clk_50MHz_i_BUFGP |   0.000|
-r_o<0>      |   31.239(R)|clk_50MHz_i_BUFGP |   0.000|
-r_o<1>      |   30.991(R)|clk_50MHz_i_BUFGP |   0.000|
-r_o<2>      |   30.754(R)|clk_50MHz_i_BUFGP |   0.000|
-rows_o<0>   |   12.402(R)|clk_50MHz_i_BUFGP |   0.000|
-rows_o<1>   |   12.949(R)|clk_50MHz_i_BUFGP |   0.000|
-rows_o<2>   |   12.847(R)|clk_50MHz_i_BUFGP |   0.000|
-rows_o<3>   |   12.527(R)|clk_50MHz_i_BUFGP |   0.000|
-segments<0> |    9.752(R)|clk_50MHz_i_BUFGP |   0.000|
-segments<1> |    9.719(R)|clk_50MHz_i_BUFGP |   0.000|
-segments<2> |   10.123(R)|clk_50MHz_i_BUFGP |   0.000|
-segments<3> |   10.233(R)|clk_50MHz_i_BUFGP |   0.000|
-segments<4> |   10.145(R)|clk_50MHz_i_BUFGP |   0.000|
-segments<5> |    9.465(R)|clk_50MHz_i_BUFGP |   0.000|
-segments<6> |   10.027(R)|clk_50MHz_i_BUFGP |   0.000|
-------------+------------+------------------+--------+
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+b_o<0>        |   28.164(R)|clk_50MHz_i_BUFGP |   0.000|
+b_o<1>        |   28.417(R)|clk_50MHz_i_BUFGP |   0.000|
+g_o<0>        |   28.828(R)|clk_50MHz_i_BUFGP |   0.000|
+g_o<1>        |   29.077(R)|clk_50MHz_i_BUFGP |   0.000|
+g_o<2>        |   29.077(R)|clk_50MHz_i_BUFGP |   0.000|
+r_o<0>        |   29.361(R)|clk_50MHz_i_BUFGP |   0.000|
+r_o<1>        |   29.110(R)|clk_50MHz_i_BUFGP |   0.000|
+r_o<2>        |   28.813(R)|clk_50MHz_i_BUFGP |   0.000|
+rows_o<0>     |   13.984(R)|clk_50MHz_i_BUFGP |   0.000|
+rows_o<1>     |   14.186(R)|clk_50MHz_i_BUFGP |   0.000|
+rows_o<2>     |   14.481(R)|clk_50MHz_i_BUFGP |   0.000|
+rows_o<3>     |   13.886(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<0>   |   11.040(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<1>   |   11.994(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<2>   |   11.811(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<3>   |   12.281(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<4>   |   11.739(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<5>   |   12.304(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<6>   |   11.914(R)|clk_50MHz_i_BUFGP |   0.000|
+transistors<0>|    9.240(R)|clk_50MHz_i_BUFGP |   0.000|
+transistors<1>|    8.807(R)|clk_50MHz_i_BUFGP |   0.000|
+transistors<2>|    9.016(R)|clk_50MHz_i_BUFGP |   0.000|
+transistors<3>|    9.447(R)|clk_50MHz_i_BUFGP |   0.000|
+--------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk_50MHz_i
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_50MHz_i    |    5.890|         |         |         |
+clk_50MHz_i    |    6.170|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu May 12 12:50:43 2016 
+Analysis completed Fri May 13 14:38:33 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:

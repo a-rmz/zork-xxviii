@@ -1,4 +1,0 @@
-xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/font_rom.xst" -ofn "/home/alex/ISE/Projects/zork/font_rom.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 font_rom.ngc font_rom.ngd  
-xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/font_rom.xst" -ofn "/home/alex/ISE/Projects/zork/font_rom.syr" 
-xst -intstyle ise -ifn "/home/alex/ISE/Projects/zork/font_rom.xst" -ofn "/home/alex/ISE/Projects/zork/font_rom.syr" 

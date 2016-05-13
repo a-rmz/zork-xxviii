@@ -29,55 +29,9 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="font_rom.bld"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="font_rom.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="font_rom.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="font_rom.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="font_rom.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="font_rom.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="font_rom.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="font_rom.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="font_rom.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="font_rom_envsettings.html"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="font_rom_summary.html"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="font_rom_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="fsm_movement.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="fsm_movement.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="fsm_movement.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="fsm_movement.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fsm_movement.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="fsm_movement.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="fsm_movement.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="fsm_movement.xst"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fsm_movement_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="labyrynth_rom.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="labyrynth_rom.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="labyrynth_rom.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="labyrynth_rom.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="labyrynth_rom.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="labyrynth_rom.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="labyrynth_rom.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="labyrynth_rom.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="labyrynth_rom_envsettings.html"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="labyrynth_rom_summary.html"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="labyrynth_rom_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_fsm_mv_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_fsm_mv_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_fsm_mv_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_fsm_mv_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_game_control_stx_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_vga_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_vga_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="vga_control_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vga_control_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="zork.bgn" xil_pn:subbranch="FPGAConfiguration"/>
@@ -104,11 +58,6 @@
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="zork.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="zork.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="zork_envsettings.html"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="zork_fpga_editor.log"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="zork_game_test_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="zork_game_test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="zork_game_test_isim_beh.wdb"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="zork_game_test_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="zork_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="zork_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="zork_map.mrp" xil_pn:subbranch="Map"/>
@@ -126,122 +75,41 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1463064236" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1463064236">
+    <transform xil_pn:end_ts="1463165191" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1463165191">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463076685" xil_pn:in_ck="2717211793156004391" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1463076685">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="PIPO.v"/>
-      <outfile xil_pn:name="bin_to_hex.v"/>
-      <outfile xil_pn:name="debouncer.v"/>
-      <outfile xil_pn:name="font_rom.v"/>
-      <outfile xil_pn:name="fsm.v"/>
-      <outfile xil_pn:name="game_control.v"/>
-      <outfile xil_pn:name="image_driver.v"/>
-      <outfile xil_pn:name="key_decoder.v"/>
-      <outfile xil_pn:name="keyboard_decoder.v"/>
-      <outfile xil_pn:name="labyrynth_rom.v"/>
-      <outfile xil_pn:name="mod_n.v"/>
-      <outfile xil_pn:name="one_cold.v"/>
-      <outfile xil_pn:name="tb_fsm_mv.v"/>
-      <outfile xil_pn:name="tb_game_control.v"/>
-      <outfile xil_pn:name="tb_vga.v"/>
-      <outfile xil_pn:name="vga_control.v"/>
-      <outfile xil_pn:name="zork.v"/>
-      <outfile xil_pn:name="zork_game_test.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1463076689" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7943036530382394165" xil_pn:start_ts="1463076689">
+    <transform xil_pn:end_ts="1463165191" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2674108904460785377" xil_pn:start_ts="1463165191">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463076689" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6543449676066105015" xil_pn:start_ts="1463076689">
+    <transform xil_pn:end_ts="1463165191" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1744619377400758824" xil_pn:start_ts="1463165191">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463064236" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1744619377400758824" xil_pn:start_ts="1463064236">
+    <transform xil_pn:end_ts="1463165191" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1463165191">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463076689" xil_pn:in_ck="2717211793156004391" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1463076689">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="PIPO.v"/>
-      <outfile xil_pn:name="bin_to_hex.v"/>
-      <outfile xil_pn:name="debouncer.v"/>
-      <outfile xil_pn:name="font_rom.v"/>
-      <outfile xil_pn:name="fsm.v"/>
-      <outfile xil_pn:name="game_control.v"/>
-      <outfile xil_pn:name="image_driver.v"/>
-      <outfile xil_pn:name="key_decoder.v"/>
-      <outfile xil_pn:name="keyboard_decoder.v"/>
-      <outfile xil_pn:name="labyrynth_rom.v"/>
-      <outfile xil_pn:name="mod_n.v"/>
-      <outfile xil_pn:name="one_cold.v"/>
-      <outfile xil_pn:name="tb_fsm_mv.v"/>
-      <outfile xil_pn:name="tb_game_control.v"/>
-      <outfile xil_pn:name="tb_vga.v"/>
-      <outfile xil_pn:name="vga_control.v"/>
-      <outfile xil_pn:name="zork.v"/>
-      <outfile xil_pn:name="zork_game_test.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1463076692" xil_pn:in_ck="2717211793156004391" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7528583054649800373" xil_pn:start_ts="1463076689">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
-      <outfile xil_pn:name="zork_game_test_beh.prj"/>
-      <outfile xil_pn:name="zork_game_test_isim_beh.exe"/>
-    </transform>
-    <transform xil_pn:end_ts="1463076692" xil_pn:in_ck="5739937280080236424" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3773581150265575758" xil_pn:start_ts="1463076692">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="zork_game_test_isim_beh.wdb"/>
-    </transform>
-    <transform xil_pn:end_ts="1462994593" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1462994593">
+    <transform xil_pn:end_ts="1463165191" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-636352794083958051" xil_pn:start_ts="1463165191">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463016949" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2674108904460785377" xil_pn:start_ts="1463016949">
+    <transform xil_pn:end_ts="1463165192" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1463165191">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463016949" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1744619377400758824" xil_pn:start_ts="1463016949">
+    <transform xil_pn:end_ts="1463165192" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8549518965725631950" xil_pn:start_ts="1463165192">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463016949" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1463016949">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1463016949" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-636352794083958051" xil_pn:start_ts="1463016949">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1463016949" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1463016949">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1463016949" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8549518965725631950" xil_pn:start_ts="1463016949">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1463076669" xil_pn:in_ck="6405825583256445306" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5911102604605201819" xil_pn:start_ts="1463076651">
+    <transform xil_pn:end_ts="1463168289" xil_pn:in_ck="-2027264065631850982" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5911102604605201819" xil_pn:start_ts="1463168271">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="font_rom.ngr"/>
-      <outfile xil_pn:name="labyrynth_rom.ngr"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
       <outfile xil_pn:name="zork.lso"/>
@@ -251,30 +119,25 @@
       <outfile xil_pn:name="zork.stx"/>
       <outfile xil_pn:name="zork.syr"/>
       <outfile xil_pn:name="zork.xst"/>
-      <outfile xil_pn:name="zork_game_test_stx_beh.prj"/>
       <outfile xil_pn:name="zork_xst.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1463065722" xil_pn:in_ck="6585738851336714057" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="123229027436410376" xil_pn:start_ts="1463065722">
+    <transform xil_pn:end_ts="1463167311" xil_pn:in_ck="6585738851336714057" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="123229027436410376" xil_pn:start_ts="1463167311">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463075427" xil_pn:in_ck="7010156289971330309" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1189865731942033685" xil_pn:start_ts="1463075423">
+    <transform xil_pn:end_ts="1463168294" xil_pn:in_ck="-5170402421034947627" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1189865731942033685" xil_pn:start_ts="1463168289">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="zork.bld"/>
       <outfile xil_pn:name="zork.ngd"/>
       <outfile xil_pn:name="zork_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1463075432" xil_pn:in_ck="-5170402421034947626" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1463075427">
+    <transform xil_pn:end_ts="1463168300" xil_pn:in_ck="-5170402421034947626" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1463168294">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="zork.pcf"/>
       <outfile xil_pn:name="zork_map.map"/>
@@ -285,10 +148,9 @@
       <outfile xil_pn:name="zork_summary.xml"/>
       <outfile xil_pn:name="zork_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1463075443" xil_pn:in_ck="8920546955627017711" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1463075432">
+    <transform xil_pn:end_ts="1463168313" xil_pn:in_ck="8920546955627017711" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1463168300">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="zork.ncd"/>
       <outfile xil_pn:name="zork.pad"/>
@@ -300,12 +162,9 @@
       <outfile xil_pn:name="zork_pad.txt"/>
       <outfile xil_pn:name="zork_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1463075448" xil_pn:in_ck="5347393092361" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1463075443">
+    <transform xil_pn:end_ts="1463168320" xil_pn:in_ck="5347393092361" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1463168313">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="usage_statistics_webtalk.html"/>
       <outfile xil_pn:name="webtalk.log"/>
@@ -315,17 +174,15 @@
       <outfile xil_pn:name="zork.drc"/>
       <outfile xil_pn:name="zork.ut"/>
     </transform>
-    <transform xil_pn:end_ts="1463075222" xil_pn:in_ck="5347393079507" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1463075221">
+    <transform xil_pn:end_ts="1463165283" xil_pn:in_ck="5347393079507" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1463165282">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1463075443" xil_pn:in_ck="-5170402421034947758" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1463075440">
+    <transform xil_pn:end_ts="1463168313" xil_pn:in_ck="-5170402421034947758" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1463168310">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="zork.twr"/>
       <outfile xil_pn:name="zork.twx"/>

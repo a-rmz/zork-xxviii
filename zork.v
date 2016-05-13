@@ -65,13 +65,21 @@ module zork(
   wire [9:0] vga_x, vga_y;
   wire phrase_ended;
 
-  labyrinth_rom labyrinth_rom (
-    .player_pos( control_address ),
-    .screen_pos( { vga_y[4], vga_x[9:3] } ),
-    .char_ascii(char_ascii)
+	(* box_type = "user_black_box" *)
+  labyrinth_ram ram(
+    .clka(clk_50MHz_i),
+    .wea(1'b0),
+    .addra({ control_address, vga_y[5:4], vga_x[8:3] }),
+    .douta(char_ascii)
   );
 
-  assign phrase_ended = ( { vga_y[4], vga_x[9:3] }  < 8'd255);
+  // labyrinth_rom labyrinth_rom (
+  //   .player_pos( control_address ),
+  //   .screen_pos( { vga_y[5:4], vga_x[8:3] } ),
+  //   .char_ascii(char_ascii)
+  // );
+
+  assign phrase_ended = ( vga_y < 10'd32);
 
   // VGA
   vga_control vga_control (
@@ -91,13 +99,15 @@ module zork(
     .pix_to_display( pix_to_display )
   );
 
-  bin_to_hex display (
-    .w( control_address[7] ),
-  	.x( control_address[6] ),
-  	.y( control_address[5] ),
-  	.z( control_address[4] ),
-  	.segments( segments ),
-  	.T( transistors )
+  multiplexed_display navigation (
+    .rst_async_la_i( ~rst_async_la_i ),
+    .clk_50MHz_i( clk_50MHz_i ),
+    .Ain( 4'b0 ),
+    .Bin( 4'b0 ),
+    .Cin( control_address[4:2] ),
+    .Din( control_address[1:0] ),
+    .segments( segments ),
+    .T( transistors )
   );
 
   assign r_o = { 3 { pix_to_display & phrase_ended } };

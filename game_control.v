@@ -23,15 +23,18 @@ module game_control(
   input rst_async_la_i,
   input [3:0] key_in,
   input enable_move,
-  output [7:0] address
+  output [4:0] address
     );
 
-  localparam  [3:0] grid_max = 15;
+  localparam  [3:0] grid_max_x = 7;
+  localparam  [3:0] grid_max_y = 3;
   localparam  [2:0] UP = 3'b000, DOWN = 3'b001, RIGHT = 3'b010, LEFT = 3'b011, NONE = 3'b100;
 
 
-  reg [3:0] posx, posy;         // Positions that will be used to determine the address
-  reg [3:0] new_posx, new_posy; // Positions modified by the movement
+  reg [2:0] posx;               // Positions that will be used to determine the address
+  reg [1:0] posy;               // Positions that will be used to determine the address
+  reg [2:0] new_posx;               // Positions modified by the movement
+  reg [1:0] new_posy;               // Positions modified by the movement
   reg [2:0] dir;                // Direction of the movement
   reg enable_move_sync;         // Movement enable synchronized with the 50MHz clock
   wire valid_move;              // Validates off-bounds movements
@@ -56,12 +59,12 @@ module game_control(
   assign valid_move = enable_move_sync & (
     // Off-bounds -> top (X, 0)
     (dir == UP && posy > 0) |
-    // Off-bounds -> bottom (X, 15)
-    (dir == DOWN && posy < grid_max) |
+    // Off-bounds -> bottom (X, 3)
+    (dir == DOWN && posy < grid_max_y) |
     // Off-bounds -> left (0, X)
     (dir == LEFT && posx > 0) |
-    // Off-bounds -> right (15, X)
-    (dir == RIGHT && posx < grid_max)
+    // Off-bounds -> right (7, X)
+    (dir == RIGHT && posx < grid_max_x)
   );
 
   // If the movement is valid, the player moves according to the direction
@@ -103,8 +106,8 @@ module game_control(
   always @ (posedge clk_50MHz_i, negedge rst_async_la_i ) begin
     if(!rst_async_la_i)
       begin
-        posx <= 4'h7;
-        posy <= 4'h7;
+        posx <= grid_max_x;
+        posy <= grid_max_y;
       end
     else
       begin
@@ -114,7 +117,6 @@ module game_control(
   end
 
   // The addres is determined by the concatenation of both coordinates
-  // TODO will change (hope so)
   assign address = { posx, posy };
 
   endmodule

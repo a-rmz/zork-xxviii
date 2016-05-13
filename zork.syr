@@ -161,7 +161,9 @@ Analyzing hierarchy for module <game_control> in library <work> with parameters.
 	grid_max_x = "0111"
 	grid_max_y = "0011"
 
-Analyzing hierarchy for module <vga_control> in library <work>.
+Analyzing hierarchy for module <vga_control> in library <work> with parameters.
+	HEIGHT = "0001000000"
+	WIDTH = "0111111111"
 
 Analyzing hierarchy for module <image_driver> in library <work>.
 
@@ -259,6 +261,8 @@ Analyzing module <game_control> in library <work>.
 Module <game_control> is correct for synthesis.
  
 Analyzing module <vga_control> in library <work>.
+	HEIGHT = 10'b0001000000
+	WIDTH = 10'b0111111111
 Module <vga_control> is correct for synthesis.
  
 Analyzing module <image_driver> in library <work>.
@@ -308,28 +312,30 @@ Unit <game_control> synthesized.
 
 Synthesizing Unit <vga_control>.
     Related source file is "vga_control.v".
-WARNING:Xst:646 - Signal <video_on> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <vert_sync_out>.
     Found 10-bit register for signal <pixel_row>.
+    Found 1-bit register for signal <disable_print>.
     Found 10-bit register for signal <pixel_column>.
     Found 1-bit register for signal <horiz_sync_out>.
     Found 1-bit register for signal <clk_25>.
     Found 10-bit up counter for signal <h_count>.
     Found 1-bit register for signal <horiz_sync>.
-    Found 10-bit comparator greater for signal <horiz_sync$cmp_gt0000> created at line 71.
-    Found 10-bit comparator less for signal <horiz_sync$cmp_lt0000> created at line 71.
-    Found 10-bit comparator lessequal for signal <pixel_column$cmp_le0000> created at line 76.
-    Found 10-bit comparator lessequal for signal <pixel_row$cmp_le0000> created at line 101.
+    Found 10-bit comparator greater for signal <horiz_sync$cmp_gt0000> created at line 73.
+    Found 10-bit comparator less for signal <horiz_sync$cmp_lt0000> created at line 73.
     Found 21-bit up counter for signal <Scrn_cntr>.
     Found 10-bit up counter for signal <v_count>.
-    Found 10-bit comparator greater for signal <v_count$cmp_gt0000> created at line 87.
-    Found 10-bit comparator greater for signal <v_count$cmp_gt0001> created at line 87.
+    Found 10-bit comparator greater for signal <v_count$cmp_gt0000> created at line 89.
+    Found 10-bit comparator greater for signal <v_count$cmp_gt0001> created at line 89.
     Found 1-bit register for signal <vert_sync>.
-    Found 10-bit comparator greater for signal <vert_sync$cmp_gt0000> created at line 96.
-    Found 10-bit comparator less for signal <vert_sync$cmp_lt0000> created at line 96.
+    Found 10-bit comparator greater for signal <vert_sync$cmp_gt0000> created at line 98.
+    Found 10-bit comparator less for signal <vert_sync$cmp_lt0000> created at line 98.
+    Found 1-bit register for signal <video_on_h>.
+    Found 10-bit comparator lessequal for signal <video_on_h$cmp_le0000> created at line 78.
+    Found 1-bit register for signal <video_on_v>.
+    Found 10-bit comparator lessequal for signal <video_on_v$cmp_le0000> created at line 103.
     Summary:
 	inferred   3 Counter(s).
-	inferred  25 D-type flip-flop(s).
+	inferred  28 D-type flip-flop(s).
 	inferred   8 Comparator(s).
 Unit <vga_control> synthesized.
 
@@ -478,12 +484,9 @@ Unit <keyboard_decoder> synthesized.
 
 Synthesizing Unit <zork>.
     Related source file is "zork.v".
+WARNING:Xst:646 - Signal <vga_y<9:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <vga_x<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <key_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <control_address<7:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 10-bit comparator less for signal <phrase_ended>.
-    Summary:
-	inferred   1 Comparator(s).
 Unit <zork> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -505,8 +508,8 @@ Macro Statistics
  8-bit adder                                           : 1
 # Counters                                             : 2
  10-bit up counter                                     : 2
-# Registers                                            : 17
- 1-bit register                                        : 6
+# Registers                                            : 20
+ 1-bit register                                        : 9
  10-bit register                                       : 2
  2-bit register                                        : 2
  21-bit register                                       : 1
@@ -516,9 +519,9 @@ Macro Statistics
  3-bit register                                        : 1
  4-bit register                                        : 1
  8-bit register                                        : 1
-# Comparators                                          : 17
+# Comparators                                          : 16
  10-bit comparator greater                             : 4
- 10-bit comparator less                                : 3
+ 10-bit comparator less                                : 2
  10-bit comparator lessequal                           : 2
  2-bit comparator greatequal                           : 1
  2-bit comparator greater                              : 1
@@ -554,11 +557,6 @@ Reading core <labyrinth_ram.ngc>.
 Loading core <labyrinth_ram> for timing and area information for instance <ram>.
 INFO:Xst:2261 - The FF/Latch <spd_ff_4> in Unit <gtv> is equivalent to the following 24 FFs/Latches, which will be removed : <spd_ff_5> <spd_ff_6> <spd_ff_7> <spd_ff_8> <spd_ff_9> <spd_ff_10> <spd_ff_11> <spd_ff_12> <spd_ff_13> <spd_ff_14> <spd_ff_15> <spd_ff_16> <spd_ff_17> <spd_ff_18> <spd_ff_19> <spd_ff_20> <spd_ff_21> <spd_ff_22> <spd_ff_23> <spd_ff_24> <spd_ff_25> <spd_ff_26> <spd_ff_27> <spd_ff_28> 
 WARNING:Xst:1710 - FF/Latch <spd_ff_4> (without init value) has a constant value of 0 in block <gtv>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <pixel_column_9> of sequential type is unconnected in block <vga_control>.
-WARNING:Xst:2677 - Node <spd_ff_0> of sequential type is unconnected in block <gtv>.
-WARNING:Xst:2677 - Node <spd_ff_1> of sequential type is unconnected in block <gtv>.
-WARNING:Xst:2677 - Node <spd_ff_2> of sequential type is unconnected in block <gtv>.
-WARNING:Xst:2677 - Node <spd_ff_3> of sequential type is unconnected in block <gtv>.
 WARNING:Xst:2404 -  FFs/Latches <spd_ff<28:0>> (without init value) have a constant value of 0 in block <soft_gtv>.
 
 =========================================================================
@@ -579,11 +577,11 @@ Macro Statistics
  8-bit adder                                           : 1
 # Counters                                             : 2
  10-bit up counter                                     : 2
-# Registers                                            : 115
- Flip-Flops                                            : 115
-# Comparators                                          : 17
+# Registers                                            : 118
+ Flip-Flops                                            : 118
+# Comparators                                          : 16
  10-bit comparator greater                             : 4
- 10-bit comparator less                                : 3
+ 10-bit comparator less                                : 2
  10-bit comparator lessequal                           : 2
  2-bit comparator greatequal                           : 1
  2-bit comparator greater                              : 1
@@ -620,17 +618,10 @@ Optimizing unit <mod_n_3> ...
 Optimizing unit <soft_gtv> ...
 
 Optimizing unit <keyboard_decoder> ...
-WARNING:Xst:2677 - Node <vga_control/pixel_column_9> of sequential type is unconnected in block <zork>.
-WARNING:Xst:2677 - Node <navigation/gtv/gtv_cnt_ff_7> of sequential type is unconnected in block <zork>.
-WARNING:Xst:2677 - Node <navigation/gtv/gtv_cnt_ff_6> of sequential type is unconnected in block <zork>.
-WARNING:Xst:2677 - Node <navigation/gtv/gtv_cnt_ff_5> of sequential type is unconnected in block <zork>.
-WARNING:Xst:2677 - Node <navigation/gtv/gtv_cnt_ff_4> of sequential type is unconnected in block <zork>.
-WARNING:Xst:2677 - Node <navigation/gtv/gtv_cnt_ff_3> of sequential type is unconnected in block <zork>.
-WARNING:Xst:2677 - Node <navigation/gtv/gtv_cnt_ff_2> of sequential type is unconnected in block <zork>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block zork, actual ratio is 46.
+Found area constraint ratio of 100 (+ 5) on block zork, actual ratio is 47.
 
 Final Macro Processing ...
 
@@ -638,8 +629,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 130
- Flip-Flops                                            : 130
+# Registers                                            : 129
+ Flip-Flops                                            : 129
 
 =========================================================================
 
@@ -668,28 +659,27 @@ Design Statistics
 # IOs                              : 31
 
 Cell Usage :
-# BELS                             : 965
+# BELS                             : 967
 #      GND                         : 2
-#      INV                         : 13
+#      INV                         : 14
 #      LUT1                        : 83
-#      LUT2                        : 120
-#      LUT2_L                      : 4
-#      LUT3                        : 111
-#      LUT3_D                      : 1
-#      LUT3_L                      : 4
-#      LUT4                        : 365
-#      LUT4_D                      : 3
+#      LUT2                        : 115
+#      LUT2_L                      : 2
+#      LUT3                        : 120
+#      LUT3_L                      : 2
+#      LUT4                        : 359
+#      LUT4_D                      : 5
 #      LUT4_L                      : 6
 #      MUXCY                       : 116
-#      MUXF5                       : 44
+#      MUXF5                       : 50
 #      MUXF6                       : 1
 #      VCC                         : 2
 #      XORCY                       : 90
-# FlipFlops/Latches                : 130
+# FlipFlops/Latches                : 129
 #      FD                          : 1
 #      FDC                         : 35
 #      FDCE                        : 38
-#      FDE                         : 23
+#      FDE                         : 22
 #      FDP                         : 2
 #      FDPE                        : 3
 #      FDR                         : 28
@@ -708,9 +698,9 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      394  out of    960    41%  
- Number of Slice Flip Flops:            130  out of   1920     6%  
- Number of 4 input LUTs:                710  out of   1920    36%  
+ Number of Slices:                      390  out of    960    40%  
+ Number of Slice Flip Flops:            129  out of   1920     6%  
+ Number of 4 input LUTs:                706  out of   1920    36%  
  Number of IOs:                          31
  Number of bonded IOBs:                  31  out of     83    37%  
  Number of BRAMs:                         4  out of      4   100%  
@@ -739,7 +729,7 @@ Clock Signal                       | Clock buffer(FF name)                      
 -----------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------+
 clk_50MHz_i                        | BUFGP                                                                                                                   | 91    |
 ram/N1                             | NONE(ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp2x2.ram)| 4     |
-vga_control/clk_251                | BUFG                                                                                                                    | 43    |
+vga_control/clk_251                | BUFG                                                                                                                    | 42    |
 -----------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -757,7 +747,7 @@ Speed Grade: -4
 
    Minimum period: 7.757ns (Maximum Frequency: 128.916MHz)
    Minimum input arrival time before clock: 5.192ns
-   Maximum output required time after clock: 22.859ns
+   Maximum output required time after clock: 22.885ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -802,20 +792,20 @@ Delay:               6.559ns (Levels of Logic = 14)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'vga_control/clk_251'
   Clock period: 7.757ns (frequency: 128.916MHz)
-  Total number of paths / destination ports: 1594 / 72
+  Total number of paths / destination ports: 1481 / 67
 -------------------------------------------------------------------------
 Delay:               7.757ns (Levels of Logic = 14)
-  Source:            vga_control/h_count_9 (FF)
+  Source:            vga_control/h_count_8 (FF)
   Destination:       vga_control/v_count_9 (FF)
   Source Clock:      vga_control/clk_251 rising
   Destination Clock: vga_control/clk_251 rising
 
-  Data Path: vga_control/h_count_9 to vga_control/v_count_9
+  Data Path: vga_control/h_count_8 to vga_control/v_count_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              5   0.591   0.808  vga_control/h_count_9 (vga_control/h_count_9)
-     LUT2_L:I0->LO         1   0.704   0.104  vga_control/v_count_cmp_gt00011_SW0 (N15)
+     FDC:C->Q              5   0.591   0.808  vga_control/h_count_8 (vga_control/h_count_8)
+     LUT2_L:I0->LO         1   0.704   0.104  vga_control/v_count_cmp_gt00011_SW0 (N9)
      LUT4:I3->O            3   0.704   0.535  vga_control/v_count_cmp_gt00011 (vga_control/v_count_cmp_gt0001)
      LUT4_D:I3->O          9   0.704   0.855  vga_control/v_count_not0001321 (vga_control/v_count_and0000)
      LUT3:I2->O            1   0.704   0.000  vga_control/Mcount_v_count_lut<0> (vga_control/Mcount_v_count_lut<0>)
@@ -836,23 +826,23 @@ Delay:               7.757ns (Levels of Logic = 14)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'vga_control/clk_251'
-  Total number of paths / destination ports: 23 / 23
+  Total number of paths / destination ports: 22 / 22
 -------------------------------------------------------------------------
-Offset:              4.242ns (Levels of Logic = 2)
+Offset:              4.258ns (Levels of Logic = 2)
   Source:            rst_async_la_i (PAD)
-  Destination:       vga_control/pixel_row_9 (FF)
+  Destination:       vga_control/pixel_column_8 (FF)
   Destination Clock: vga_control/clk_251 rising
 
-  Data Path: rst_async_la_i to vga_control/pixel_row_9
+  Data Path: rst_async_la_i to vga_control/pixel_column_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             7   1.218   0.883  rst_async_la_i_IBUF (rst_async_la_i_IBUF)
-     LUT4:I0->O           10   0.704   0.882  vga_control/pixel_row_and000032 (vga_control/pixel_row_and0000)
-     FDE:CE                    0.555          vga_control/pixel_row_0
+     IBUF:I->O            10   1.218   0.961  rst_async_la_i_IBUF (rst_async_la_i_IBUF)
+     LUT2:I1->O            9   0.704   0.820  vga_control/pixel_column_and00001 (vga_control/pixel_column_and0000)
+     FDE:CE                    0.555          vga_control/pixel_column_0
     ----------------------------------------
-    Total                      4.242ns (2.477ns logic, 1.765ns route)
-                                       (58.4% logic, 41.6% route)
+    Total                      4.258ns (2.477ns logic, 1.781ns route)
+                                       (58.2% logic, 41.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_50MHz_i'
@@ -869,7 +859,7 @@ Offset:              5.192ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      IBUF:I->O             9   1.218   0.995  columns_i_2_IBUF (columns_i_2_IBUF)
      LUT3:I0->O            1   0.704   0.455  gamepad/decoder/key<2>50 (gamepad/decoder/key<2>50)
-     LUT4_L:I2->LO         1   0.704   0.104  gamepad/decoder/key<2>65_SW0 (N170)
+     LUT4_L:I2->LO         1   0.704   0.104  gamepad/decoder/key<2>65_SW0 (N184)
      LUT4:I3->O            1   0.704   0.000  gamepad/decoder/key<2>65 (gamepad/key<2>)
      FDCE:D                    0.308          gamepad/register/Q_o_2
     ----------------------------------------
@@ -878,83 +868,85 @@ Offset:              5.192ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'vga_control/clk_251'
-  Total number of paths / destination ports: 20242 / 10
+  Total number of paths / destination ports: 19978 / 10
 -------------------------------------------------------------------------
-Offset:              20.557ns (Levels of Logic = 15)
-  Source:            vga_control/pixel_row_0 (FF)
+Offset:              21.761ns (Levels of Logic = 16)
+  Source:            vga_control/pixel_row_3 (FF)
   Destination:       g_o<2> (PAD)
   Source Clock:      vga_control/clk_251 rising
 
-  Data Path: vga_control/pixel_row_0 to g_o<2>
+  Data Path: vga_control/pixel_row_3 to g_o<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             98   0.591   1.362  vga_control/pixel_row_0 (vga_control/pixel_row_0)
-     LUT3:I1->O            1   0.704   0.424  image_driver/font/pixels_or0001467_SW0 (N2341)
-     LUT4:I3->O            1   0.704   0.424  image_driver/font/pixels_or0001467 (image_driver/font/pixels_or0001467)
-     LUT4:I3->O            1   0.704   0.424  image_driver/font/pixels_or0001485_SW0 (N158)
-     LUT4:I3->O            1   0.704   0.424  image_driver/font/pixels_or0001485 (image_driver/font/pixels_or0001485)
-     LUT4:I3->O            1   0.704   0.424  image_driver/font/pixels_or0001551_SW0 (N160)
-     LUT4:I3->O            1   0.704   0.499  image_driver/font/pixels_or0001551 (image_driver/font/pixels_or0001551)
-     LUT4:I1->O            2   0.704   0.526  image_driver/font/pixels_or0001576 (image_driver/font/pixels_or0001)
-     LUT4:I1->O            1   0.704   0.424  image_driver/font/pixels<2>11125_SW0 (N156)
-     LUT4:I3->O            2   0.704   0.622  image_driver/font/pixels<2>11125 (N33)
+     FDE:C->Q             91   0.591   1.456  vga_control/pixel_row_3 (vga_control/pixel_row_3)
+     LUT2:I0->O           19   0.704   1.120  image_driver/font/pixels_or0025231 (N118)
+     LUT4:I2->O            1   0.704   0.455  image_driver/font/pixels<6>111326 (image_driver/font/pixels<6>111326)
+     LUT4:I2->O            1   0.704   0.499  image_driver/font/pixels<6>111329 (image_driver/font/pixels<6>111329)
+     LUT3:I1->O            1   0.704   0.000  image_driver/font/pixels<6>1113611_F (N308)
+     MUXF5:I0->O           1   0.321   0.455  image_driver/font/pixels<6>1113611 (image_driver/font/pixels<6>1113611)
+     LUT4:I2->O            1   0.704   0.424  image_driver/font/pixels<6>111388_SW0 (N1021)
+     LUT4:I3->O            1   0.704   0.455  image_driver/font/pixels<6>111388 (image_driver/font/pixels<6>111388)
+     LUT3:I2->O            1   0.704   0.424  image_driver/font/pixels<6>111399 (image_driver/font/pixels<6>111399)
+     LUT4:I3->O            2   0.704   0.526  image_driver/font/pixels<6>111412 (N57)
+     LUT3:I1->O            2   0.704   0.622  image_driver/font/pixels<2>11113 (N33)
      LUT4:I0->O            1   0.704   0.499  image_driver/font/pixels<1> (image_driver/char_row<1>)
      LUT3:I1->O            1   0.704   0.000  image_driver/Mmux_pix_to_display_4 (image_driver/Mmux_pix_to_display_4)
      MUXF5:I1->O           1   0.321   0.000  image_driver/Mmux_pix_to_display_3_f5 (image_driver/Mmux_pix_to_display_3_f5)
      MUXF6:I1->O           1   0.521   0.595  image_driver/Mmux_pix_to_display_2_f6 (pix_to_display)
-     LUT4:I0->O            8   0.704   0.757  r_o_and0000 (r_o_0_OBUF)
+     LUT2:I0->O            8   0.704   0.757  r_o_and00001 (r_o_0_OBUF)
      OBUF:I->O                 3.272          g_o_2_OBUF (g_o<2>)
     ----------------------------------------
-    Total                     20.557ns (13.153ns logic, 7.404ns route)
-                                       (64.0% logic, 36.0% route)
+    Total                     21.761ns (13.474ns logic, 8.287ns route)
+                                       (61.9% logic, 38.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_50MHz_i'
-  Total number of paths / destination ports: 29129 / 23
+  Total number of paths / destination ports: 29137 / 23
 -------------------------------------------------------------------------
-Offset:              22.859ns (Levels of Logic = 16)
-  Source:            ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp2x2.ram (RAM)
+Offset:              22.885ns (Levels of Logic = 17)
+  Source:            ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp2x2.ram (RAM)
   Destination:       g_o<2> (PAD)
   Source Clock:      clk_50MHz_i rising
 
-  Data Path: ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp2x2.ram to g_o<2>
+  Data Path: ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp2x2.ram to g_o<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16_S2_S2:CLKA->DOA1   87   2.800   1.455  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp2x2.ram (douta<3>)
+     RAMB16_S2_S2:CLKA->DOA1  104   2.800   1.460  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp2x2.ram (douta<5>)
      end scope: 'ram'
-     LUT3:I0->O            1   0.704   0.424  image_driver/font/pixels_or0001467_SW0 (N2341)
-     LUT4:I3->O            1   0.704   0.424  image_driver/font/pixels_or0001467 (image_driver/font/pixels_or0001467)
-     LUT4:I3->O            1   0.704   0.424  image_driver/font/pixels_or0001485_SW0 (N158)
-     LUT4:I3->O            1   0.704   0.424  image_driver/font/pixels_or0001485 (image_driver/font/pixels_or0001485)
-     LUT4:I3->O            1   0.704   0.424  image_driver/font/pixels_or0001551_SW0 (N160)
-     LUT4:I3->O            1   0.704   0.499  image_driver/font/pixels_or0001551 (image_driver/font/pixels_or0001551)
-     LUT4:I1->O            2   0.704   0.526  image_driver/font/pixels_or0001576 (image_driver/font/pixels_or0001)
-     LUT4:I1->O            1   0.704   0.424  image_driver/font/pixels<2>11125_SW0 (N156)
-     LUT4:I3->O            2   0.704   0.622  image_driver/font/pixels<2>11125 (N33)
-     LUT4:I0->O            1   0.704   0.499  image_driver/font/pixels<1> (image_driver/char_row<1>)
-     LUT3:I1->O            1   0.704   0.000  image_driver/Mmux_pix_to_display_4 (image_driver/Mmux_pix_to_display_4)
-     MUXF5:I1->O           1   0.321   0.000  image_driver/Mmux_pix_to_display_3_f5 (image_driver/Mmux_pix_to_display_3_f5)
-     MUXF6:I1->O           1   0.521   0.595  image_driver/Mmux_pix_to_display_2_f6 (pix_to_display)
-     LUT4:I0->O            8   0.704   0.757  r_o_and0000 (r_o_0_OBUF)
+     LUT2:I0->O            3   0.704   0.610  image_driver/font/pixels_or0001511 (N95)
+     LUT4:I1->O            1   0.704   0.455  image_driver/font/pixels_or00047 (image_driver/font/pixels_or00047)
+     LUT4:I2->O            1   0.704   0.424  image_driver/font/pixels_or000442_SW0 (N2361)
+     LUT4:I3->O            1   0.704   0.455  image_driver/font/pixels_or000442 (image_driver/font/pixels_or000442)
+     LUT4:I2->O            3   0.704   0.706  image_driver/font/pixels_or0004199 (image_driver/font/pixels_or0004)
+     LUT4:I0->O            1   0.704   0.000  image_driver/font/pixels<5>111341 (image_driver/font/pixels<5>111341)
+     MUXF5:I0->O           1   0.321   0.424  image_driver/font/pixels<5>11134_f5 (image_driver/font/pixels<5>11134)
+     LUT4:I3->O            1   0.704   0.000  image_driver/font/pixels<5>111451 (image_driver/font/pixels<5>11145)
+     MUXF5:I0->O           2   0.321   0.622  image_driver/font/pixels<5>11145_f5 (N54)
+     LUT3:I0->O            2   0.704   0.622  image_driver/font/pixels<4>11335 (N34)
+     LUT4:I0->O            1   0.704   0.455  image_driver/font/pixels<4>86 (image_driver/char_row<4>)
+     LUT3:I2->O            1   0.704   0.000  image_driver/Mmux_pix_to_display_51 (image_driver/Mmux_pix_to_display_51)
+     MUXF5:I1->O           1   0.321   0.000  image_driver/Mmux_pix_to_display_4_f5 (image_driver/Mmux_pix_to_display_4_f5)
+     MUXF6:I0->O           1   0.521   0.595  image_driver/Mmux_pix_to_display_2_f6 (pix_to_display)
+     LUT2:I0->O            8   0.704   0.757  r_o_and00001 (r_o_0_OBUF)
      OBUF:I->O                 3.272          g_o_2_OBUF (g_o<2>)
     ----------------------------------------
-    Total                     22.859ns (15.362ns logic, 7.497ns route)
-                                       (67.2% logic, 32.8% route)
+    Total                     22.885ns (15.300ns logic, 7.585ns route)
+                                       (66.9% logic, 33.1% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 15.54 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.09 secs
  
 --> 
 
 
-Total memory usage is 545752 kilobytes
+Total memory usage is 545816 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   24 (   0 filtered)
+Number of warnings :   27 (  20 filtered)
 Number of infos    :    5 (   0 filtered)
 

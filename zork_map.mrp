@@ -3,30 +3,31 @@ Xilinx Mapping Report File for Design 'zork'
 
 Design Information
 ------------------
-Command Line   : map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off
--c 100 -o zork_map.ncd zork.ngd zork.pcf 
+Command Line   : map -filter
+/home/alex/ISE/Projects/zork/iseconfig/filter.filter -intstyle ise -p
+xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o zork_map.ncd zork.ngd
+zork.pcf 
 Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Fri May 13 14:38:16 2016
+Mapped Date    : Fri May 13 16:39:50 2016
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:           125 out of   1,920    6%
-  Number of 4 input LUTs:               629 out of   1,920   32%
+  Number of Slice Flip Flops:           129 out of   1,920    6%
+  Number of 4 input LUTs:               627 out of   1,920   32%
 Logic Distribution:
-  Number of occupied Slices:            378 out of     960   39%
-    Number of Slices containing only related logic:     378 out of     378 100%
-    Number of Slices containing unrelated logic:          0 out of     378   0%
+  Number of occupied Slices:            379 out of     960   39%
+    Number of Slices containing only related logic:     379 out of     379 100%
+    Number of Slices containing unrelated logic:          0 out of     379   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         712 out of   1,920   37%
-    Number used as logic:               628
+  Total Number of 4 input LUTs:         710 out of   1,920   36%
+    Number used as logic:               627
     Number used as a route-thru:         83
-    Number used as Shift registers:       1
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -35,7 +36,7 @@ Logic Distribution:
   Number of RAMB16s:                      4 out of       4  100%
   Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                3.53
+Average Fanout of Non-Clock Nets:                3.51
 
 Peak Memory Usage:  613 MB
 Total REAL time to MAP completion:  2 secs 

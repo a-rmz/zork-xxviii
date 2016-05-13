@@ -37,7 +37,7 @@ module zork(
 
     );
 
-  wire [7:0] control_address;
+  wire [4:0] control_address;
 
   wire [3:0] key_pressed, key_out;
   wire enable_move;
@@ -79,13 +79,12 @@ module zork(
   //   .char_ascii(char_ascii)
   // );
 
-  assign phrase_ended = ( vga_y < 10'd32);
 
   // VGA
-  vga_control vga_control (
+  vga_control #( .WIDTH(10'd511), .HEIGHT(10'd64) )vga_control (
 	.clk_50( clk_50MHz_i ),
 	.rst( rst_async_la_i ),
-
+  .disable_print(phrase_ended),
 	.pixel_column(vga_x),       // Column pixel counter
 	.pixel_row(vga_y),     			// Row pixel counter
 	.horiz_sync_out(vga_hsync),	// Horizontal Sync output, to VGA connector
@@ -104,8 +103,8 @@ module zork(
     .clk_50MHz_i( clk_50MHz_i ),
     .Ain( 4'b0 ),
     .Bin( 4'b0 ),
-    .Cin( control_address[4:2] ),
-    .Din( control_address[1:0] ),
+    .Cin( { 2'b00, control_address[1:0] } ),
+    .Din( { 1'b0, control_address[4:2] } ),
     .segments( segments ),
     .T( transistors )
   );

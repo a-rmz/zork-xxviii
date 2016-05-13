@@ -117,6 +117,6 @@ module game_control(
   end
 
   // The addres is determined by the concatenation of both coordinates
-  assign address = { posx, posy };
+  assign address = { posy, posx };
 
   endmodule

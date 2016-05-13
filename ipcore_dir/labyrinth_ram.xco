@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Fri May 13 18:37:43 2016
+# Date: Fri May 13 21:33:20 2016
 #
 ##############################################################
 #
@@ -46,7 +46,7 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file=/home/alex/ISE/Projects/zork/definition2_labyinth_ram.coe
+CSET coe_file=/home/alex/ISE/Projects/zork/definition2_labyrinth_ram.coe
 CSET collision_warnings=ALL
 CSET component_name=labyrinth_ram
 CSET disable_collision_warnings=false
@@ -105,4 +105,4 @@ CSET write_width_b=8
 MISC pkg_timestamp=2012-11-19T16:22:25Z
 # END Extra information
 GENERATE
-# CRC: ea643505
+# CRC: 8344731e

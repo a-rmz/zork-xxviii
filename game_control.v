@@ -33,8 +33,8 @@ module game_control(
 
   reg [2:0] posx;               // Positions that will be used to determine the address
   reg [1:0] posy;               // Positions that will be used to determine the address
-  reg [2:0] new_posx;               // Positions modified by the movement
-  reg [1:0] new_posy;               // Positions modified by the movement
+  reg [2:0] new_posx;           // Positions modified by the movement
+  reg [1:0] new_posy;           // Positions modified by the movement
   reg [2:0] dir;                // Direction of the movement
   reg enable_move_sync;         // Movement enable synchronized with the 50MHz clock
   wire valid_move;              // Validates off-bounds movements
@@ -67,40 +67,34 @@ module game_control(
     (dir == RIGHT && posx < grid_max_x)
   );
 
+  // To connect the forbidden_move block
+  wire [2:0] positionx;
+  wire [1:0] positiony;
+
+  // Verifies if the next movement is forbidden by the map design
   // If the movement is valid, the player moves according to the direction
   // given by the key pressed
-  always @ ( * ) begin
-    case( { valid_move, dir } )
-    {1'b1, UP}:
-      begin
-        new_posy <= posy - 1;
-        new_posx <= posx;
-      end
-    {1'b1, RIGHT}:
-      begin
-        new_posx <= posx + 1;
-        new_posy <= posy;
-      end
-    {1'b1, DOWN}:
-      begin
-        new_posy <= posy + 1;
-        new_posx <= posx;
-      end
-    {1'b1, LEFT}:
-      begin
-        new_posx <= posx - 1;
-        new_posy <= posy;
-      end
-    default:
-      begin
-        new_posx <= posx;
-        new_posy <= posy;
-      end
-    endcase
-  end
+  forbidden_moves forbidden_moves (
+    .posx(posx),
+    .posy(posy),
+    .dir(dir),
+    .valid(valid_move),
+    .positionx(positionx),
+    .positiony(positiony)
+  );
 
-  // When the game is reseted, the player starts at the center of the grid,
-  // at coordinates (7, 7).
+  // always @ ( * ) begin
+  //   if(valid_move)
+  //     new_posx <= positionx;
+  //     new_posy <= positiony;
+  //   else
+  //     new_posx <= posx;
+  //     new_posy <= posy;
+  // end
+
+
+  // When the game is reseted, the player starts at the right bottom of the grid,
+  // at coordinates (3, 7).
   // Otherwise, the current positions are assigned according to the movements
   // realised
   always @ (posedge clk_50MHz_i, negedge rst_async_la_i ) begin
@@ -111,8 +105,8 @@ module game_control(
       end
     else
       begin
-        posx <= new_posx;
-        posy <= new_posy;
+        posx <= positionx;
+        posy <= positiony;
       end
   end
 

@@ -46,7 +46,7 @@
             <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_SOFTECC">false</spirit:configurableElementValue>
             <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PIPELINE_STAGES">0</spirit:configurableElementValue>
             <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.LOAD_INIT_FILE">true</spirit:configurableElementValue>
-            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COE_FILE">/home/alex/ISE/Projects/zork/definition2_labyrinth_ram.coe</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COE_FILE">/home/alex/ISE/Projects/zork/map_bin_32.coe</spirit:configurableElementValue>
             <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.FILL_REMAINING_MEMORY_LOCATIONS">false</spirit:configurableElementValue>
             <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REMAINING_MEMORY_LOCATIONS">0</spirit:configurableElementValue>
             <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_RSTA_PIN">false</spirit:configurableElementValue>
@@ -171,16 +171,16 @@
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram.mif</xilinx:name>
                      <xilinx:userFileType>mif</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:14 GMT 2016</xilinx:timeStamp>
-                     <xilinx:checkSum>0xCAFC0E1E</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:timeStamp>Fri May 13 23:46:10 GMT 2016</xilinx:timeStamp>
+                     <xilinx:checkSum>0xE63AC8B8</xilinx:checkSum>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./summary.log</xilinx:name>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:13 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:08 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x98724345</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -188,16 +188,16 @@
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram.mif</xilinx:name>
                      <xilinx:userFileType>mif</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
-                     <xilinx:checkSum>0xCAFC0E1E</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:timeStamp>Fri May 13 23:46:15 GMT 2016</xilinx:timeStamp>
+                     <xilinx:checkSum>0xE63AC8B8</xilinx:checkSum>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./summary.log</xilinx:name>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:18 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:14 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x98724345</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -205,9 +205,9 @@
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram.xco</xilinx:name>
                      <xilinx:userFileType>xco</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
-                     <xilinx:checkSum>0xA5C53734</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
+                     <xilinx:checkSum>0x5722C090</xilinx:checkSum>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -218,7 +218,7 @@
                      <xilinx:userFileType>txt</xilinx:userFileType>
                      <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
                      <xilinx:checkSum>0xF95F2A26</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/doc/blk_mem_gen_v7_3_vinfo.html</xilinx:name>
@@ -226,7 +226,7 @@
                      <xilinx:userFileType>unknown</xilinx:userFileType>
                      <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
                      <xilinx:checkSum>0x702C7FA8</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/doc/pg058-blk-mem-gen.pdf</xilinx:name>
@@ -234,7 +234,7 @@
                      <xilinx:userFileType>pdf</xilinx:userFileType>
                      <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
                      <xilinx:checkSum>0x39526EEE</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -243,329 +243,329 @@
                      <xilinx:name>./labyrinth_ram/example_design/labyrinth_ram_exdes.ucf</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>ucf</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0xC44C6B6D</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/example_design/labyrinth_ram_exdes.vhd</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>vhdl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x95327502</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/example_design/labyrinth_ram_exdes.xdc</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>xdc</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x7684D6D4</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/example_design/labyrinth_ram_prod.vhd</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>vhdl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x9A0E7500</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/implement/implement.bat</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0xE24E222D</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/implement/implement.sh</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x4F70D7A1</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/implement/planAhead_ise.bat</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0xDFEDC5C0</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/implement/planAhead_ise.sh</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x4337D1BC</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/implement/planAhead_ise.tcl</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>tcl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x6CBDFFA8</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/implement/xst.prj</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x2B6A5A3A</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/implement/xst.scr</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x2ACC3AB2</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/addr_gen.vhd</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>vhdl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x0500E48D</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/bmg_stim_gen.vhd</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>vhdl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x550ABA20</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/bmg_tb_pkg.vhd</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>vhdl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0xE0D93E5B</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/checker.vhd</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>vhdl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x3EC35020</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/data_gen.vhd</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>vhdl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0xD9F7C4A0</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/functional/simcmds.tcl</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>tcl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x58C76F22</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/functional/simulate_isim.sh</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x68707A27</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/functional/simulate_mti.bat</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/functional/simulate_mti.do</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x0F13F23E</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/functional/simulate_mti.sh</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/functional/simulate_ncsim.sh</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0xD981526C</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/functional/simulate_vcs.sh</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x345923F6</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/functional/ucli_commands.key</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x90DA178D</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/functional/vcs_session.tcl</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>tcl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x6F578928</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/functional/wave_mti.do</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x17EABEC6</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/functional/wave_ncsim.sv</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x1318D588</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/labyrinth_ram_synth.vhd</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>vhdl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0xA3931338</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/labyrinth_ram_tb.vhd</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>vhdl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x10B174DF</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/random.vhd</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>vhdl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x2939160A</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/timing/simcmds.tcl</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>tcl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x58C76F22</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/timing/simulate_isim.sh</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x1BC9748C</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/timing/simulate_mti.bat</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/timing/simulate_mti.do</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x1E2F7844</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/timing/simulate_mti.sh</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/timing/simulate_ncsim.sh</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x9459151B</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/timing/simulate_vcs.sh</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0xA0205F8A</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/timing/ucli_commands.key</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x90DA178D</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/timing/vcs_session.tcl</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>tcl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x892D4736</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/timing/wave_mti.do</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x35EEA505</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram/simulation/timing/wave_ncsim.sv</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:33:20 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:16 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x6E6DAAE0</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -573,9 +573,9 @@
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram.ngc</xilinx:name>
                      <xilinx:userFileType>ngc</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:03 GMT 2016</xilinx:timeStamp>
-                     <xilinx:checkSum>0xEC0E04CF</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:timeStamp>Fri May 13 23:46:57 GMT 2016</xilinx:timeStamp>
+                     <xilinx:checkSum>0x8D61F702</xilinx:checkSum>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -589,9 +589,9 @@
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram.veo</xilinx:name>
                      <xilinx:userFileType>veo</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:03 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:57 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0xD4CBAC9E</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -599,9 +599,9 @@
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram.v</xilinx:name>
                      <xilinx:userFileType>verilog</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:03 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:57 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x28BD026D</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -610,9 +610,9 @@
                      <xilinx:name>./labyrinth_ram/doc/blk_mem_gen_v7_3_vinfo.html</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:04 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:46:57 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x702C7FA8</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -620,23 +620,23 @@
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram.asy</xilinx:name>
                      <xilinx:userFileType>asy</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:08 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:47:02 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x1C7CAD22</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram.mif</xilinx:name>
                      <xilinx:userFileType>mif</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:08 GMT 2016</xilinx:timeStamp>
-                     <xilinx:checkSum>0xCAFC0E1E</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:timeStamp>Fri May 13 23:47:02 GMT 2016</xilinx:timeStamp>
+                     <xilinx:checkSum>0xE63AC8B8</xilinx:checkSum>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./summary.log</xilinx:name>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:06 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:47:00 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x98724345</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -645,9 +645,9 @@
                      <xilinx:name>./labyrinth_ram_xmdf.tcl</xilinx:name>
                      <xilinx:userFileType>tclXmdf</xilinx:userFileType>
                      <xilinx:userFileType>tcl</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:08 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:47:02 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x26B182D1</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -656,17 +656,17 @@
                      <xilinx:name>./labyrinth_ram.gise</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>gise</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:12 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:47:05 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0xC6686889</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram.xise</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>xise</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:12 GMT 2016</xilinx:timeStamp>
-                     <xilinx:checkSum>0x9DA105B3</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:timeStamp>Fri May 13 23:47:05 GMT 2016</xilinx:timeStamp>
+                     <xilinx:checkSum>0x47C7EC04</xilinx:checkSum>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -675,17 +675,17 @@
                      <xilinx:name>./labyrinth_ram.gise</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>gise</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:14 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:47:08 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x021B7899</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./labyrinth_ram.xise</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>xise</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:14 GMT 2016</xilinx:timeStamp>
-                     <xilinx:checkSum>0xFD874327</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:timeStamp>Fri May 13 23:47:08 GMT 2016</xilinx:timeStamp>
+                     <xilinx:checkSum>0x2980B865</xilinx:checkSum>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>
@@ -698,9 +698,9 @@
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>txtFlist</xilinx:userFileType>
                      <xilinx:userFileType>txt</xilinx:userFileType>
-                     <xilinx:timeStamp>Fri May 13 21:34:15 GMT 2016</xilinx:timeStamp>
+                     <xilinx:timeStamp>Fri May 13 23:47:08 GMT 2016</xilinx:timeStamp>
                      <xilinx:checkSum>0x6BE55155</xilinx:checkSum>
-                     <xilinx:generationId>generationID_1879581046</xilinx:generationId>
+                     <xilinx:generationId>generationID_706127423</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
                <xilinx:fileSet>

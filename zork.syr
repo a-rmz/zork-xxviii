@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: zork.prj
@@ -469,11 +469,9 @@ Synthesizing Unit <game_control>.
     Found 2-bit register for signal <posy>.
     Found 2-bit comparator greater for signal <valid_move$cmp_gt0000> created at line 59.
     Found 3-bit comparator greater for signal <valid_move$cmp_gt0001> created at line 59.
-    Found 2-bit comparator less for signal <valid_move$cmp_lt0000> created at line 59.
-    Found 3-bit comparator less for signal <valid_move$cmp_lt0001> created at line 59.
     Summary:
 	inferred   6 D-type flip-flop(s).
-	inferred   4 Comparator(s).
+	inferred   2 Comparator(s).
 Unit <game_control> synthesized.
 
 
@@ -532,18 +530,16 @@ Macro Statistics
  3-bit register                                        : 1
  4-bit register                                        : 1
  8-bit register                                        : 1
-# Comparators                                          : 16
+# Comparators                                          : 14
  10-bit comparator greater                             : 4
  10-bit comparator less                                : 2
  10-bit comparator lessequal                           : 2
  2-bit comparator greatequal                           : 1
  2-bit comparator greater                              : 1
- 2-bit comparator less                                 : 1
  21-bit comparator greatequal                          : 1
  22-bit comparator greatequal                          : 1
  27-bit comparator equal                               : 1
  3-bit comparator greater                              : 1
- 3-bit comparator less                                 : 1
 # Multiplexers                                         : 2
  1-bit 8-to-1 multiplexer                              : 1
  4-bit 4-to-1 multiplexer                              : 1
@@ -596,18 +592,16 @@ Macro Statistics
  10-bit up counter                                     : 2
 # Registers                                            : 118
  Flip-Flops                                            : 118
-# Comparators                                          : 16
+# Comparators                                          : 14
  10-bit comparator greater                             : 4
  10-bit comparator less                                : 2
  10-bit comparator lessequal                           : 2
  2-bit comparator greatequal                           : 1
  2-bit comparator greater                              : 1
- 2-bit comparator less                                 : 1
  21-bit comparator greatequal                          : 1
  22-bit comparator greatequal                          : 1
  27-bit comparator equal                               : 1
  3-bit comparator greater                              : 1
- 3-bit comparator less                                 : 1
 # Multiplexers                                         : 2
  1-bit 8-to-1 multiplexer                              : 1
  4-bit 4-to-1 multiplexer                              : 1
@@ -956,13 +950,13 @@ Offset:              22.885ns (Levels of Logic = 17)
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 15.39 secs
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.63 secs
  
 --> 
 
 
-Total memory usage is 545936 kilobytes
+Total memory usage is 545660 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   64 (  51 filtered)

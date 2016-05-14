@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-a-rmz::  Fri May 13 19:25:03 2016
+a-rmz::  Fri May 13 19:28:32 2016
 
 par -filter /home/alex/ISE/Projects/zork/iseconfig/filter.filter -w -intstyle
 ise -ol high -t 1 zork_map.ncd zork.ncd zork.pcf 
@@ -91,13 +91,13 @@ Phase 8.5  Local Placement Optimization
 Phase 8.5  Local Placement Optimization (Checksum:b3e2788d) REAL time: 3 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:2671de98) REAL time: 3 secs 
+Phase 9.18  Placement Optimization (Checksum:2671de98) REAL time: 4 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:2671de98) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:2671de98) REAL time: 4 secs 
 
-Total REAL time to Placer completion: 3 secs 
-Total CPU  time to Placer completion: 3 secs 
+Total REAL time to Placer completion: 4 secs 
+Total CPU  time to Placer completion: 4 secs 
 Writing design to file zork.ncd
 
 
@@ -109,30 +109,30 @@ Phase  1  : 2333 unrouted;      REAL time: 4 secs
 
 Phase  2  : 2218 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 568 unrouted;      REAL time: 4 secs 
+Phase  3  : 568 unrouted;      REAL time: 5 secs 
 
-Phase  4  : 590 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  4  : 590 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Updating file: zork.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
 Updating file: zork.ncd with current fully routed design.
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
-Total REAL time to Router completion: 8 secs 
-Total CPU time to Router completion: 8 secs 
+Total REAL time to Router completion: 9 secs 
+Total CPU time to Router completion: 9 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -192,8 +192,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 8 secs 
-Total CPU time to PAR completion: 8 secs 
+Total REAL time to PAR completion: 9 secs 
+Total CPU time to PAR completion: 9 secs 
 
 Peak Memory Usage:  592 MB
 

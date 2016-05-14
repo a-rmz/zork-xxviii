@@ -21,7 +21,7 @@
 module forbidden_moves(
   input [2:0] posx,
   input [1:0] posy,
-  input dir,
+  input [2:0] dir,
   input valid,
   output reg [2:0] positionx,
   output reg [1:0] positiony

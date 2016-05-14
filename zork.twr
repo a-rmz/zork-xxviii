@@ -46,10 +46,10 @@ Setup/Hold to clock clk_50MHz_i
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-columns_i<0>|    2.498(R)|   -0.598(R)|clk_50MHz_i_BUFGP |   0.000|
-columns_i<1>|    2.271(R)|   -0.417(R)|clk_50MHz_i_BUFGP |   0.000|
-columns_i<2>|    1.642(R)|    0.086(R)|clk_50MHz_i_BUFGP |   0.000|
-columns_i<3>|    1.740(R)|    0.008(R)|clk_50MHz_i_BUFGP |   0.000|
+columns_i<0>|    3.678(R)|   -0.134(R)|clk_50MHz_i_BUFGP |   0.000|
+columns_i<1>|    3.284(R)|    0.587(R)|clk_50MHz_i_BUFGP |   0.000|
+columns_i<2>|    3.284(R)|    0.637(R)|clk_50MHz_i_BUFGP |   0.000|
+columns_i<3>|    3.548(R)|    0.272(R)|clk_50MHz_i_BUFGP |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk_50MHz_i to Pad
@@ -57,26 +57,29 @@ Clock clk_50MHz_i to Pad
               | clk (edge) |                  | Clock  |
 Destination   |   to PAD   |Internal Clock(s) | Phase  |
 --------------+------------+------------------+--------+
-b_o<0>        |   29.110(R)|clk_50MHz_i_BUFGP |   0.000|
-b_o<1>        |   29.003(R)|clk_50MHz_i_BUFGP |   0.000|
-g_o<0>        |   29.445(R)|clk_50MHz_i_BUFGP |   0.000|
-g_o<1>        |   29.678(R)|clk_50MHz_i_BUFGP |   0.000|
-g_o<2>        |   29.440(R)|clk_50MHz_i_BUFGP |   0.000|
-r_o<0>        |   30.505(R)|clk_50MHz_i_BUFGP |   0.000|
-r_o<1>        |   30.505(R)|clk_50MHz_i_BUFGP |   0.000|
-r_o<2>        |   29.926(R)|clk_50MHz_i_BUFGP |   0.000|
-rows_o<0>     |   13.302(R)|clk_50MHz_i_BUFGP |   0.000|
-rows_o<1>     |   13.541(R)|clk_50MHz_i_BUFGP |   0.000|
-rows_o<2>     |   13.617(R)|clk_50MHz_i_BUFGP |   0.000|
-rows_o<3>     |   13.302(R)|clk_50MHz_i_BUFGP |   0.000|
-segments<0>   |    8.314(R)|clk_50MHz_i_BUFGP |   0.000|
-segments<1>   |    8.314(R)|clk_50MHz_i_BUFGP |   0.000|
-segments<2>   |    9.099(R)|clk_50MHz_i_BUFGP |   0.000|
-segments<3>   |   10.858(R)|clk_50MHz_i_BUFGP |   0.000|
-transistors<0>|   10.008(R)|clk_50MHz_i_BUFGP |   0.000|
-transistors<1>|   10.733(R)|clk_50MHz_i_BUFGP |   0.000|
-transistors<2>|    9.985(R)|clk_50MHz_i_BUFGP |   0.000|
-transistors<3>|    8.320(R)|clk_50MHz_i_BUFGP |   0.000|
+b_o<0>        |   29.507(R)|clk_50MHz_i_BUFGP |   0.000|
+b_o<1>        |   28.949(R)|clk_50MHz_i_BUFGP |   0.000|
+g_o<0>        |   30.009(R)|clk_50MHz_i_BUFGP |   0.000|
+g_o<1>        |   29.594(R)|clk_50MHz_i_BUFGP |   0.000|
+g_o<2>        |   29.760(R)|clk_50MHz_i_BUFGP |   0.000|
+r_o<0>        |   30.229(R)|clk_50MHz_i_BUFGP |   0.000|
+r_o<1>        |   30.229(R)|clk_50MHz_i_BUFGP |   0.000|
+r_o<2>        |   29.840(R)|clk_50MHz_i_BUFGP |   0.000|
+rows_o<0>     |   13.309(R)|clk_50MHz_i_BUFGP |   0.000|
+rows_o<1>     |   13.551(R)|clk_50MHz_i_BUFGP |   0.000|
+rows_o<2>     |   13.609(R)|clk_50MHz_i_BUFGP |   0.000|
+rows_o<3>     |   12.944(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<0>   |   11.895(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<1>   |   11.654(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<2>   |   12.121(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<3>   |   12.515(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<4>   |   12.392(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<5>   |   12.411(R)|clk_50MHz_i_BUFGP |   0.000|
+segments<6>   |   11.805(R)|clk_50MHz_i_BUFGP |   0.000|
+transistors<0>|    8.745(R)|clk_50MHz_i_BUFGP |   0.000|
+transistors<1>|    9.084(R)|clk_50MHz_i_BUFGP |   0.000|
+transistors<2>|    8.937(R)|clk_50MHz_i_BUFGP |   0.000|
+transistors<3>|    8.984(R)|clk_50MHz_i_BUFGP |   0.000|
 --------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk_50MHz_i
@@ -84,18 +87,18 @@ Clock to Setup on destination clock clk_50MHz_i
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_50MHz_i    |    5.302|         |         |         |
+clk_50MHz_i    |    8.003|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri May 13 19:28:45 2016 
+Analysis completed Fri May 13 20:02:07 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 339 MB
+Peak Memory Usage: 340 MB
 
 
 

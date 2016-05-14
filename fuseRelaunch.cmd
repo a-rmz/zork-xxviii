@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/alex/ISE/Projects/zork/zork_game_test_isim_beh.exe" -prj "/home/alex/ISE/Projects/zork/zork_game_test_beh.prj" "work.zork_game_test" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/alex/ISE/Projects/zork/tb_forbidden_isim_beh.exe" -prj "/home/alex/ISE/Projects/zork/tb_forbidden_beh.prj" "work.tb_forbidden" "work.glbl" 

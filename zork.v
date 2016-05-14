@@ -81,7 +81,7 @@ module zork(
 
 
   // VGA
-  vga_control #( .WIDTH(10'd511), .HEIGHT(10'd64) )vga_control (
+  vga_control #( .WIDTH(10'd511), .HEIGHT(10'd64) ) vga_control (
 	.clk_50( clk_50MHz_i ),
 	.rst( rst_async_la_i ),
   .disable_print(phrase_ended),
@@ -103,8 +103,8 @@ module zork(
     .clk_50MHz_i( clk_50MHz_i ),
     .Ain( 4'b0 ),
     .Bin( 4'b0 ),
-    .Cin( { 2'b00, control_address[1:0] } ),
-    .Din( { 1'b0, control_address[4:2] } ),
+    .Cin( { 1'b0, control_address[4:3] } ),
+    .Din( { 2'b00, control_address[2:0] } ),
     .segments( segments ),
     .T( transistors )
   );

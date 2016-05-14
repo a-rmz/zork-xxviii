@@ -28,7 +28,7 @@ module game_control(
 
   localparam  [3:0] grid_max_x = 7;
   localparam  [3:0] grid_max_y = 3;
-  localparam  [2:0] UP = 3'b000, DOWN = 3'b001, RIGHT = 3'b010, LEFT = 3'b011, NONE = 3'b100;
+  localparam  [2:0] UP = 3'b000, DOWN = 3'b111, RIGHT = 3'b101, LEFT = 3'b010, NONE = 3'b100;
 
 
   reg [2:0] posx;               // Positions that will be used to determine the address
@@ -71,6 +71,8 @@ module game_control(
   // If the movement is valid, the player moves according to the direction
   // given by the key pressed
   forbidden_moves forbidden_moves (
+    .rst_async_la_i( rst_async_la_i ),
+    .clk_50MHz_i( clk_50MHz_i ),
     .posx( posx ),
     .posy( posy ),
     .dir( dir ),

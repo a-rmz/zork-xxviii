@@ -29,9 +29,17 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_forbidden_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_forbidden_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_forbidden_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_forbidden_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="zork.bgn" xil_pn:subbranch="FPGAConfiguration"/>
@@ -57,6 +65,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="zork.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="zork.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="zork.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="zork_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="zork_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="zork_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="zork_map.mrp" xil_pn:subbranch="Map"/>
@@ -74,6 +83,93 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1463255067" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1463255067">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1463255067" xil_pn:in_ck="-227311405269559639" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1463255067">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PIPO.v"/>
+      <outfile xil_pn:name="bin_hex.v"/>
+      <outfile xil_pn:name="debouncer.v"/>
+      <outfile xil_pn:name="font_rom.v"/>
+      <outfile xil_pn:name="forbidden_moves.v"/>
+      <outfile xil_pn:name="fsm.v"/>
+      <outfile xil_pn:name="fsm_stuck.v"/>
+      <outfile xil_pn:name="game_control.v"/>
+      <outfile xil_pn:name="image_driver.v"/>
+      <outfile xil_pn:name="ipcore_dir/labyrinth_ram.v"/>
+      <outfile xil_pn:name="key_decoder.v"/>
+      <outfile xil_pn:name="keyboard_decoder.v"/>
+      <outfile xil_pn:name="mod_n.v"/>
+      <outfile xil_pn:name="multiplexed_display.v"/>
+      <outfile xil_pn:name="mux_4to1_4bits.v"/>
+      <outfile xil_pn:name="one_cold.v"/>
+      <outfile xil_pn:name="soft_gtv.v"/>
+      <outfile xil_pn:name="tb_forbidden.v"/>
+      <outfile xil_pn:name="tb_fsm_mv.v"/>
+      <outfile xil_pn:name="tb_game_control.v"/>
+      <outfile xil_pn:name="tb_vga.v"/>
+      <outfile xil_pn:name="vga_control.v"/>
+      <outfile xil_pn:name="zork.v"/>
+      <outfile xil_pn:name="zork_game_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1463255070" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6320454098117034137" xil_pn:start_ts="1463255070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1463255070" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6437027525250874085" xil_pn:start_ts="1463255070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1463255070" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1744619377400758824" xil_pn:start_ts="1463255070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1463255070" xil_pn:in_ck="-227311405269559639" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1463255070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PIPO.v"/>
+      <outfile xil_pn:name="bin_hex.v"/>
+      <outfile xil_pn:name="debouncer.v"/>
+      <outfile xil_pn:name="font_rom.v"/>
+      <outfile xil_pn:name="forbidden_moves.v"/>
+      <outfile xil_pn:name="fsm.v"/>
+      <outfile xil_pn:name="fsm_stuck.v"/>
+      <outfile xil_pn:name="game_control.v"/>
+      <outfile xil_pn:name="image_driver.v"/>
+      <outfile xil_pn:name="ipcore_dir/labyrinth_ram.v"/>
+      <outfile xil_pn:name="key_decoder.v"/>
+      <outfile xil_pn:name="keyboard_decoder.v"/>
+      <outfile xil_pn:name="mod_n.v"/>
+      <outfile xil_pn:name="multiplexed_display.v"/>
+      <outfile xil_pn:name="mux_4to1_4bits.v"/>
+      <outfile xil_pn:name="one_cold.v"/>
+      <outfile xil_pn:name="soft_gtv.v"/>
+      <outfile xil_pn:name="tb_forbidden.v"/>
+      <outfile xil_pn:name="tb_fsm_mv.v"/>
+      <outfile xil_pn:name="tb_game_control.v"/>
+      <outfile xil_pn:name="tb_vga.v"/>
+      <outfile xil_pn:name="vga_control.v"/>
+      <outfile xil_pn:name="zork.v"/>
+      <outfile xil_pn:name="zork_game_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1463255074" xil_pn:in_ck="-227311405269559639" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6026111228432936723" xil_pn:start_ts="1463255070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="tb_forbidden_beh.prj"/>
+      <outfile xil_pn:name="tb_forbidden_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1463255074" xil_pn:in_ck="4283366638216899217" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2356344586149547478" xil_pn:start_ts="1463255074">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="tb_forbidden_isim_beh.wdb"/>
+    </transform>
     <transform xil_pn:end_ts="1463187686" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1463187686">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -102,7 +198,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463187705" xil_pn:in_ck="2520840479365018179" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5911102604605201819" xil_pn:start_ts="1463187686">
+    <transform xil_pn:end_ts="1463254717" xil_pn:in_ck="3932219470446307094" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5911102604605201819" xil_pn:start_ts="1463254696">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -124,7 +220,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463187709" xil_pn:in_ck="-5170402421034947627" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1189865731942033685" xil_pn:start_ts="1463187705">
+    <transform xil_pn:end_ts="1463254724" xil_pn:in_ck="-5170402421034947627" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1189865731942033685" xil_pn:start_ts="1463254717">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -134,9 +230,11 @@
       <outfile xil_pn:name="zork.ngd"/>
       <outfile xil_pn:name="zork_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1463187714" xil_pn:in_ck="-5170402421034947626" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1463187709">
+    <transform xil_pn:end_ts="1463254733" xil_pn:in_ck="-5170402421034947626" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1463254724">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="zork.pcf"/>
       <outfile xil_pn:name="zork_map.map"/>
@@ -147,7 +245,7 @@
       <outfile xil_pn:name="zork_summary.xml"/>
       <outfile xil_pn:name="zork_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1463187727" xil_pn:in_ck="8920546955627017711" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1463187714">
+    <transform xil_pn:end_ts="1463254749" xil_pn:in_ck="8920546955627017711" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1463254733">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -161,7 +259,7 @@
       <outfile xil_pn:name="zork_pad.txt"/>
       <outfile xil_pn:name="zork_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1463187733" xil_pn:in_ck="5347393092361" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1463187727">
+    <transform xil_pn:end_ts="1463254756" xil_pn:in_ck="5347393092361" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1463254749">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -173,7 +271,11 @@
       <outfile xil_pn:name="zork.drc"/>
       <outfile xil_pn:name="zork.ut"/>
     </transform>
-    <transform xil_pn:end_ts="1463187727" xil_pn:in_ck="-5170402421034947758" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1463187725">
+    <transform xil_pn:end_ts="1463254763" xil_pn:in_ck="5347393079507" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1463254762">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1463254749" xil_pn:in_ck="-5170402421034947758" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1463254746">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

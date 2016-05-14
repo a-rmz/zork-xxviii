@@ -1,0 +1,29 @@
+Command line:
+   tb_forbidden_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55092
+
+Sat May 14 15:14:13 2016
+
+
+ Elaboration Time: 0.06 sec
+
+ Current Memory Usage: 237.085 Meg
+
+ Total Signals          : 27
+ Total Nets             : 34
+ Total Signal Drivers   : 16
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 24
+ Total Traceable Variables  : 42
+ Total Scalar Nets and Variables : 202
+Total Line Count : 81
+
+ Total Simulation Time: 0.21 sec
+
+ Current Memory Usage: 312.586 Meg
+
+Sat May 14 15:18:13 2016
+

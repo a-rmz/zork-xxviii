@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: zork.prj
@@ -107,15 +107,15 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling verilog file "PIPO.v" in library work
 Compiling verilog file "mod_n.v" in library work
+Module <PIPO> compiled
 Compiling verilog file "fsm.v" in library work
 Module <mod_n> compiled
 Compiling verilog file "soft_gtv.v" in library work
 Module <fsm> compiled
-Compiling verilog file "PIPO.v" in library work
-Module <soft_gtv> compiled
 Compiling verilog file "one_cold.v" in library work
-Module <PIPO> compiled
+Module <soft_gtv> compiled
 Compiling verilog file "mux_4to1_4bits.v" in library work
 Module <one_cold> compiled
 Compiling verilog file "key_decoder.v" in library work
@@ -155,10 +155,10 @@ Analyzing hierarchy for module <zork> in library <work>.
 Analyzing hierarchy for module <keyboard_decoder> in library <work>.
 
 Analyzing hierarchy for module <game_control> in library <work> with parameters.
-	DOWN = "001"
-	LEFT = "011"
+	DOWN = "111"
+	LEFT = "010"
 	NONE = "100"
-	RIGHT = "010"
+	RIGHT = "101"
 	UP = "000"
 	grid_max_x = "0111"
 	grid_max_y = "0011"
@@ -189,10 +189,10 @@ Analyzing hierarchy for module <PIPO> in library <work> with parameters.
 	DW = "00000000000000000000000000000100"
 
 Analyzing hierarchy for module <forbidden_moves> in library <work> with parameters.
-	DOWN = "001"
-	LEFT = "011"
+	DOWN = "111"
+	LEFT = "010"
 	NONE = "100"
-	RIGHT = "010"
+	RIGHT = "101"
 	UP = "000"
 
 Analyzing hierarchy for module <font_rom> in library <work>.
@@ -212,6 +212,9 @@ Analyzing hierarchy for module <fsm> in library <work> with parameters.
 Analyzing hierarchy for module <mod_n> in library <work> with parameters.
 	DW = "00000000000000000000000000010101"
 	N = "00000000000101101110001101100000"
+
+Analyzing hierarchy for module <PIPO> in library <work> with parameters.
+	DW = "00000000000000000000000000000011"
 
 
 =========================================================================
@@ -255,27 +258,31 @@ Module <one_cold> is correct for synthesis.
 Analyzing module <key_decoder> in library <work>.
 Module <key_decoder> is correct for synthesis.
  
-Analyzing module <PIPO> in library <work>.
+Analyzing module <PIPO.1> in library <work>.
 	DW = 32'sb00000000000000000000000000000100
-Module <PIPO> is correct for synthesis.
+Module <PIPO.1> is correct for synthesis.
  
 Analyzing module <game_control> in library <work>.
-	DOWN = 3'b001
-	LEFT = 3'b011
+	DOWN = 3'b111
+	LEFT = 3'b010
 	NONE = 3'b100
-	RIGHT = 3'b010
+	RIGHT = 3'b101
 	UP = 3'b000
 	grid_max_x = 4'b0111
 	grid_max_y = 4'b0011
 Module <game_control> is correct for synthesis.
  
 Analyzing module <forbidden_moves> in library <work>.
-	DOWN = 3'b001
-	LEFT = 3'b011
+	DOWN = 3'b111
+	LEFT = 3'b010
 	NONE = 3'b100
-	RIGHT = 3'b010
+	RIGHT = 3'b101
 	UP = 3'b000
 Module <forbidden_moves> is correct for synthesis.
+ 
+Analyzing module <PIPO.2> in library <work>.
+	DW = 32'sb00000000000000000000000000000011
+Module <PIPO.2> is correct for synthesis.
  
 Analyzing module <vga_control> in library <work>.
 	HEIGHT = 10'b0001000000
@@ -376,12 +383,12 @@ Synthesizing Unit <key_decoder>.
 Unit <key_decoder> synthesized.
 
 
-Synthesizing Unit <PIPO>.
+Synthesizing Unit <PIPO_1>.
     Related source file is "PIPO.v".
     Found 4-bit register for signal <Q_o>.
     Summary:
 	inferred   4 D-type flip-flop(s).
-Unit <PIPO> synthesized.
+Unit <PIPO_1> synthesized.
 
 
 Synthesizing Unit <fsm>.
@@ -420,13 +427,12 @@ Synthesizing Unit <mod_n_3>.
 Unit <mod_n_3> synthesized.
 
 
-Synthesizing Unit <forbidden_moves>.
-    Related source file is "forbidden_moves.v".
-    Found 3-bit addsub for signal <new_posx$addsub0000>.
-    Found 2-bit addsub for signal <new_posy$addsub0000>.
+Synthesizing Unit <PIPO_2>.
+    Related source file is "PIPO.v".
+    Found 3-bit register for signal <Q_o>.
     Summary:
-	inferred   2 Adder/Subtractor(s).
-Unit <forbidden_moves> synthesized.
+	inferred   3 D-type flip-flop(s).
+Unit <PIPO_2> synthesized.
 
 
 Synthesizing Unit <font_rom>.
@@ -466,21 +472,6 @@ Synthesizing Unit <soft_gtv>.
 Unit <soft_gtv> synthesized.
 
 
-Synthesizing Unit <game_control>.
-    Related source file is "game_control.v".
-    Found 1-bit register for signal <enable_move_sync>.
-    Found 3-bit register for signal <posx>.
-    Found 2-bit register for signal <posy>.
-    Found 2-bit comparator greater for signal <valid_move$cmp_gt0000> created at line 59.
-    Found 3-bit comparator greater for signal <valid_move$cmp_gt0001> created at line 59.
-    Found 2-bit comparator less for signal <valid_move$cmp_lt0000> created at line 59.
-    Found 3-bit comparator less for signal <valid_move$cmp_lt0001> created at line 59.
-    Summary:
-	inferred   6 D-type flip-flop(s).
-	inferred   4 Comparator(s).
-Unit <game_control> synthesized.
-
-
 Synthesizing Unit <image_driver>.
     Related source file is "image_driver.v".
     Found 1-bit 8-to-1 multiplexer for signal <pix_to_display>.
@@ -499,9 +490,35 @@ Synthesizing Unit <debouncer>.
 Unit <debouncer> synthesized.
 
 
+Synthesizing Unit <forbidden_moves>.
+    Related source file is "forbidden_moves.v".
+    Found 3-bit comparator equal for signal <enable_move$cmp_eq0000> created at line 66.
+    Found 3-bit addsub for signal <new_posx$addsub0000>.
+    Found 2-bit addsub for signal <new_posy$addsub0000>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <forbidden_moves> synthesized.
+
+
 Synthesizing Unit <keyboard_decoder>.
     Related source file is "keyboard_decoder.v".
 Unit <keyboard_decoder> synthesized.
+
+
+Synthesizing Unit <game_control>.
+    Related source file is "game_control.v".
+    Found 1-bit register for signal <enable_move_sync>.
+    Found 3-bit register for signal <posx>.
+    Found 2-bit register for signal <posy>.
+    Found 2-bit comparator greater for signal <valid_move$cmp_gt0000> created at line 59.
+    Found 3-bit comparator greater for signal <valid_move$cmp_gt0001> created at line 59.
+    Found 2-bit comparator less for signal <valid_move$cmp_lt0000> created at line 59.
+    Found 3-bit comparator less for signal <valid_move$cmp_lt0001> created at line 59.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <game_control> synthesized.
 
 
 Synthesizing Unit <zork>.
@@ -528,7 +545,7 @@ Macro Statistics
  8-bit adder                                           : 1
 # Counters                                             : 2
  10-bit up counter                                     : 2
-# Registers                                            : 20
+# Registers                                            : 21
  1-bit register                                        : 9
  10-bit register                                       : 2
  2-bit register                                        : 2
@@ -536,10 +553,10 @@ Macro Statistics
  22-bit register                                       : 1
  27-bit register                                       : 1
  29-bit register                                       : 1
- 3-bit register                                        : 1
+ 3-bit register                                        : 2
  4-bit register                                        : 1
  8-bit register                                        : 1
-# Comparators                                          : 16
+# Comparators                                          : 17
  10-bit comparator greater                             : 4
  10-bit comparator less                                : 2
  10-bit comparator lessequal                           : 2
@@ -549,6 +566,7 @@ Macro Statistics
  21-bit comparator greatequal                          : 1
  22-bit comparator greatequal                          : 1
  27-bit comparator equal                               : 1
+ 3-bit comparator equal                                : 1
  3-bit comparator greater                              : 1
  3-bit comparator less                                 : 1
 # Multiplexers                                         : 2
@@ -597,9 +615,9 @@ Macro Statistics
  8-bit adder                                           : 1
 # Counters                                             : 2
  10-bit up counter                                     : 2
-# Registers                                            : 118
- Flip-Flops                                            : 118
-# Comparators                                          : 16
+# Registers                                            : 121
+ Flip-Flops                                            : 121
+# Comparators                                          : 17
  10-bit comparator greater                             : 4
  10-bit comparator less                                : 2
  10-bit comparator lessequal                           : 2
@@ -609,6 +627,7 @@ Macro Statistics
  21-bit comparator greatequal                          : 1
  22-bit comparator greatequal                          : 1
  27-bit comparator equal                               : 1
+ 3-bit comparator equal                                : 1
  3-bit comparator greater                              : 1
  3-bit comparator less                                 : 1
 # Multiplexers                                         : 2
@@ -633,17 +652,17 @@ Optimizing unit <mod_n_2> ...
 
 Optimizing unit <mod_n_3> ...
 
-Optimizing unit <forbidden_moves> ...
-
 Optimizing unit <soft_gtv> ...
 
-Optimizing unit <game_control> ...
+Optimizing unit <forbidden_moves> ...
 
 Optimizing unit <keyboard_decoder> ...
 
+Optimizing unit <game_control> ...
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block zork, actual ratio is 47.
+Found area constraint ratio of 100 (+ 5) on block zork, actual ratio is 48.
 
 Final Macro Processing ...
 
@@ -651,8 +670,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 129
- Flip-Flops                                            : 129
+# Registers                                            : 132
+ Flip-Flops                                            : 132
 
 =========================================================================
 
@@ -681,28 +700,30 @@ Design Statistics
 # IOs                              : 31
 
 Cell Usage :
-# BELS                             : 985
+# BELS                             : 978
 #      GND                         : 2
-#      INV                         : 12
+#      INV                         : 14
 #      LUT1                        : 83
-#      LUT2                        : 116
+#      LUT2                        : 115
 #      LUT2_L                      : 3
-#      LUT3                        : 128
-#      LUT3_D                      : 3
-#      LUT4                        : 370
-#      LUT4_D                      : 6
-#      LUT4_L                      : 2
+#      LUT3                        : 120
+#      LUT3_D                      : 1
+#      LUT3_L                      : 3
+#      LUT4                        : 372
+#      LUT4_D                      : 4
+#      LUT4_L                      : 3
 #      MUXCY                       : 116
-#      MUXF5                       : 51
+#      MUXF5                       : 49
 #      MUXF6                       : 1
 #      VCC                         : 2
 #      XORCY                       : 90
-# FlipFlops/Latches                : 129
+# FlipFlops/Latches                : 132
 #      FD                          : 1
 #      FDC                         : 35
-#      FDCE                        : 38
+#      FDCE                        : 41
 #      FDE                         : 22
-#      FDP                         : 5
+#      FDP                         : 2
+#      FDPE                        : 3
 #      FDR                         : 28
 # RAMS                             : 4
 #      RAMB16_S2_S2                : 4
@@ -719,9 +740,9 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      400  out of    960    41%  
- Number of Slice Flip Flops:            129  out of   1920     6%  
- Number of 4 input LUTs:                723  out of   1920    37%  
+ Number of Slices:                      396  out of    960    41%  
+ Number of Slice Flip Flops:            132  out of   1920     6%  
+ Number of 4 input LUTs:                718  out of   1920    37%  
  Number of IOs:                          31
  Number of bonded IOBs:                  31  out of     83    37%  
  Number of BRAMs:                         4  out of      4   100%  
@@ -748,7 +769,7 @@ Clock Information:
 -----------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                   | Load  |
 -----------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------+
-clk_50MHz_i                        | BUFGP                                                                                                                   | 91    |
+clk_50MHz_i                        | BUFGP                                                                                                                   | 94    |
 ram/N1                             | NONE(ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp2x2.ram)| 4     |
 vga_control/clk_251                | BUFG                                                                                                                    | 42    |
 -----------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------+
@@ -759,16 +780,16 @@ Asynchronous Control Signals Information:
 -------------------------------------------------------------------+-----------------------------------+-------+
 Control Signal                                                     | Buffer(FF name)                   | Load  |
 -------------------------------------------------------------------+-----------------------------------+-------+
-gamepad/comparator/rst_async_la_i_inv(vga_control/rst_inv1_INV_0:O)| NONE(gamepad/comparator/count_o_0)| 78    |
+gamepad/comparator/rst_async_la_i_inv(vga_control/rst_inv1_INV_0:O)| NONE(gamepad/comparator/count_o_0)| 81    |
 -------------------------------------------------------------------+-----------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 9.636ns (Maximum Frequency: 103.777MHz)
+   Minimum period: 8.257ns (Maximum Frequency: 121.109MHz)
    Minimum input arrival time before clock: 5.512ns
-   Maximum output required time after clock: 22.885ns
+   Maximum output required time after clock: 23.455ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -777,31 +798,30 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_50MHz_i'
-  Clock period: 9.636ns (frequency: 103.777MHz)
-  Total number of paths / destination ports: 4304 / 162
+  Clock period: 8.257ns (frequency: 121.109MHz)
+  Total number of paths / destination ports: 3376 / 171
 -------------------------------------------------------------------------
-Delay:               9.636ns (Levels of Logic = 7)
-  Source:            gamepad/register/Q_o_0 (FF)
+Delay:               8.257ns (Levels of Logic = 6)
+  Source:            gamepad/register/Q_o_1 (FF)
   Destination:       movement/posx_2 (FF)
   Source Clock:      clk_50MHz_i rising
   Destination Clock: clk_50MHz_i rising
 
-  Data Path: gamepad/register/Q_o_0 to movement/posx_2
+  Data Path: gamepad/register/Q_o_1 to movement/posx_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             4   0.591   0.762  gamepad/register/Q_o_0 (gamepad/register/Q_o_0)
-     LUT3:I0->O            6   0.704   0.704  movement/dir<1>1 (movement/dir<1>)
-     LUT4:I2->O            1   0.704   0.424  movement/valid_move54 (movement/valid_move54)
-     LUT4:I3->O            2   0.704   0.451  movement/valid_move94 (movement/valid_move)
-     LUT4_D:I3->O          2   0.704   0.451  movement/forbidden_moves/new_posy<1>1 (movement/forbidden_moves/new_posy<1>)
-     LUT4:I3->O            2   0.704   0.451  movement/forbidden_moves/valid_move_or0000_SW1 (N28)
-     LUT4_D:I3->O          3   0.704   0.566  movement/forbidden_moves/valid_move_or0000 (movement/forbidden_moves/valid_move_or0000)
-     LUT3:I2->O            1   0.704   0.000  movement/forbidden_moves/positionx<2>1 (movement/new_posx<2>)
+     FDCE:C->Q             3   0.591   0.706  gamepad/register/Q_o_1 (gamepad/register/Q_o_1)
+     LUT4:I0->O            7   0.704   0.743  movement/dir<1>1 (movement/dir<1>)
+     LUT4:I2->O            1   0.704   0.424  movement/forbidden_moves/enable_move159_SW1 (N35)
+     LUT4:I3->O            4   0.704   0.591  movement/forbidden_moves/enable_move159 (movement/forbidden_moves/enable_move159)
+     LUT4:I3->O            3   0.704   0.566  movement/forbidden_moves/new_posx_cmp_eq00001 (movement/forbidden_moves/new_posx_cmp_eq0000)
+     LUT3_L:I2->LO         1   0.704   0.104  movement/forbidden_moves/new_posx<2>1_SW0 (N42)
+     LUT4:I3->O            1   0.704   0.000  movement/forbidden_moves/new_posx<2>1 (movement/new_posx<2>)
      FDP:D                     0.308          movement/posx_2
     ----------------------------------------
-    Total                      9.636ns (5.827ns logic, 3.809ns route)
-                                       (60.5% logic, 39.5% route)
+    Total                      8.257ns (5.123ns logic, 3.134ns route)
+                                       (62.0% logic, 38.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'vga_control/clk_251'
@@ -873,7 +893,7 @@ Offset:              5.512ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      IBUF:I->O             9   1.218   0.995  columns_i_2_IBUF (columns_i_2_IBUF)
      LUT3:I0->O            1   0.704   0.455  gamepad/decoder/key<2>50 (gamepad/decoder/key<2>50)
-     LUT4:I2->O            1   0.704   0.424  gamepad/decoder/key<2>65_SW0 (N198)
+     LUT4:I2->O            1   0.704   0.424  gamepad/decoder/key<2>65_SW0 (N192)
      LUT4:I3->O            1   0.704   0.000  gamepad/decoder/key<2>65 (gamepad/key<2>)
      FDCE:D                    0.308          gamepad/register/Q_o_2
     ----------------------------------------
@@ -882,9 +902,9 @@ Offset:              5.512ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'vga_control/clk_251'
-  Total number of paths / destination ports: 19994 / 10
+  Total number of paths / destination ports: 20042 / 10
 -------------------------------------------------------------------------
-Offset:              21.727ns (Levels of Logic = 16)
+Offset:              21.761ns (Levels of Logic = 16)
   Source:            vga_control/pixel_row_3 (FF)
   Destination:       g_o<2> (PAD)
   Source Clock:      vga_control/clk_251 rising
@@ -893,13 +913,13 @@ Offset:              21.727ns (Levels of Logic = 16)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             91   0.591   1.456  vga_control/pixel_row_3 (vga_control/pixel_row_3)
-     LUT2:I0->O           17   0.704   1.086  image_driver/font/pixels_or0025231 (N118)
+     FDE:C->Q             90   0.591   1.456  vga_control/pixel_row_3 (vga_control/pixel_row_3)
+     LUT2:I0->O           19   0.704   1.120  image_driver/font/pixels_or0025231 (N118)
      LUT4:I2->O            1   0.704   0.455  image_driver/font/pixels<6>111326 (image_driver/font/pixels<6>111326)
      LUT4:I2->O            1   0.704   0.499  image_driver/font/pixels<6>111329 (image_driver/font/pixels<6>111329)
-     LUT3:I1->O            1   0.704   0.000  image_driver/font/pixels<6>1113611_F (N318)
+     LUT3:I1->O            1   0.704   0.000  image_driver/font/pixels<6>1113611_F (N310)
      MUXF5:I0->O           1   0.321   0.455  image_driver/font/pixels<6>1113611 (image_driver/font/pixels<6>1113611)
-     LUT4:I2->O            1   0.704   0.424  image_driver/font/pixels<6>111388_SW0 (N1141)
+     LUT4:I2->O            1   0.704   0.424  image_driver/font/pixels<6>111388_SW0 (N1121)
      LUT4:I3->O            1   0.704   0.455  image_driver/font/pixels<6>111388 (image_driver/font/pixels<6>111388)
      LUT3:I2->O            1   0.704   0.424  image_driver/font/pixels<6>111399 (image_driver/font/pixels<6>111399)
      LUT4:I3->O            2   0.704   0.526  image_driver/font/pixels<6>111412 (N57)
@@ -911,28 +931,29 @@ Offset:              21.727ns (Levels of Logic = 16)
      LUT2:I0->O            8   0.704   0.757  r_o_and00001 (r_o_0_OBUF)
      OBUF:I->O                 3.272          g_o_2_OBUF (g_o<2>)
     ----------------------------------------
-    Total                     21.727ns (13.474ns logic, 8.253ns route)
-                                       (62.0% logic, 38.0% route)
+    Total                     21.761ns (13.474ns logic, 8.287ns route)
+                                       (61.9% logic, 38.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_50MHz_i'
-  Total number of paths / destination ports: 29217 / 23
+  Total number of paths / destination ports: 29257 / 23
 -------------------------------------------------------------------------
-Offset:              22.885ns (Levels of Logic = 17)
-  Source:            ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp2x2.ram (RAM)
+Offset:              23.455ns (Levels of Logic = 18)
+  Source:            ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp2x2.ram (RAM)
   Destination:       g_o<2> (PAD)
   Source Clock:      clk_50MHz_i rising
 
-  Data Path: ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp2x2.ram to g_o<2>
+  Data Path: ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp2x2.ram to g_o<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16_S2_S2:CLKA->DOA1  105   2.800   1.460  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp2x2.ram (douta<5>)
+     RAMB16_S2_S2:CLKA->DOA0   87   2.800   1.455  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp2x2.ram (douta<2>)
      end scope: 'ram'
-     LUT2:I0->O            3   0.704   0.610  image_driver/font/pixels_or0001511 (N95)
-     LUT4:I1->O            1   0.704   0.455  image_driver/font/pixels_or00047 (image_driver/font/pixels_or00047)
-     LUT4:I2->O            1   0.704   0.424  image_driver/font/pixels_or000442_SW0 (N248)
-     LUT4:I3->O            1   0.704   0.455  image_driver/font/pixels_or000442 (image_driver/font/pixels_or000442)
+     LUT2:I0->O            4   0.704   0.666  image_driver/font/pixels_or0002141 (N151)
+     LUT4:I1->O            2   0.704   0.622  image_driver/font/pixels_or000461 (image_driver/font/pixels_or000461)
+     LUT4:I0->O            1   0.704   0.000  image_driver/font/pixels_or0004101_G (N267)
+     MUXF5:I1->O           1   0.321   0.455  image_driver/font/pixels_or0004101 (image_driver/font/pixels_or0004101)
+     LUT4:I2->O            1   0.704   0.455  image_driver/font/pixels_or0004199_SW0 (N92)
      LUT4:I2->O            3   0.704   0.706  image_driver/font/pixels_or0004199 (image_driver/font/pixels_or0004)
      LUT4:I0->O            1   0.704   0.000  image_driver/font/pixels<5>111341 (image_driver/font/pixels<5>111341)
      MUXF5:I0->O           1   0.321   0.424  image_driver/font/pixels<5>11134_f5 (image_driver/font/pixels<5>11134)
@@ -946,21 +967,21 @@ Offset:              22.885ns (Levels of Logic = 17)
      LUT2:I0->O            8   0.704   0.757  r_o_and00001 (r_o_0_OBUF)
      OBUF:I->O                 3.272          g_o_2_OBUF (g_o<2>)
     ----------------------------------------
-    Total                     22.885ns (15.300ns logic, 7.585ns route)
-                                       (66.9% logic, 33.1% route)
+    Total                     23.455ns (15.621ns logic, 7.834ns route)
+                                       (66.6% logic, 33.4% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 14.95 secs
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 15.91 secs
  
 --> 
 
 
-Total memory usage is 546204 kilobytes
+Total memory usage is 546416 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   27 (  23 filtered)
+Number of warnings :   29 (  23 filtered)
 Number of infos    :    5 (   0 filtered)
 

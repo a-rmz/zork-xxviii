@@ -1,0 +1,4 @@
+verilog work "PIPO.v"
+verilog work "forbidden_moves.v"
+verilog work "tb_forbidden.v"
+verilog work "/home/alex/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

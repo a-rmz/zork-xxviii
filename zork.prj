@@ -1,7 +1,7 @@
+verilog work "PIPO.v"
 verilog work "mod_n.v"
 verilog work "fsm.v"
 verilog work "soft_gtv.v"
-verilog work "PIPO.v"
 verilog work "one_cold.v"
 verilog work "mux_4to1_4bits.v"
 verilog work "key_decoder.v"

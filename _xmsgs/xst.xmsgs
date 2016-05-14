@@ -5,37 +5,31 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;game_control.v&quot; line 80 </arg>Connection to input port &apos;<arg fmt="%s" index="2">dir</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;game_control.v&quot; line 76 </arg>Connection to input port &apos;<arg fmt="%s" index="2">dir</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">multiplexed_display.v</arg>&quot; line <arg fmt="%d" index="2">51</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">spd_btn</arg>&apos; of instance &apos;<arg fmt="%s" index="4">gtv</arg>&apos; is tied to GND.
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">multiplexed_display.v</arg>&quot; line <arg fmt="%d" index="2">51</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">spd_btn</arg>&apos; of instance &apos;<arg fmt="%s" index="4">gtv</arg>&apos; is tied to GND.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">evnt_ff</arg>&gt; in unit &lt;<arg fmt="%s" index="2">soft_gtv</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">evnt_ff</arg>&gt; in unit &lt;<arg fmt="%s" index="2">soft_gtv</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2117" delta="old" >HDL ADVISOR - Mux Selector &lt;<arg fmt="%s" index="1">actual_state</arg>&gt; of Case statement line <arg fmt="%s" index="2">84</arg> was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+<msg type="info" file="Xst" num="2117" delta="new" >HDL ADVISOR - Mux Selector &lt;<arg fmt="%s" index="1">actual_state</arg>&gt; of Case statement line <arg fmt="%s" index="2">84</arg> was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
 	- add an &apos;<arg fmt="%s" index="3">INIT</arg>&apos; attribute on signal &lt;<arg fmt="%s" index="4">actual_state</arg>&gt; (optimization is then done without any risk)
 	- use the attribute &apos;<arg fmt="%s" index="5">signal_encoding</arg> <arg fmt="%s" index="6">user</arg>&apos; to avoid onehot optimization
 	- use the attribute &apos;<arg fmt="%s" index="7">safe_implementation</arg> <arg fmt="%s" index="8">yes</arg>&apos; to force XST to perform a safe (but less efficient) optimization
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">new_posy</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" filtered="1" delta="new" >Signal &lt;<arg fmt="%s" index="1">w_count&lt;7:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">new_posx</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" filtered="1" delta="new" >Signal &lt;<arg fmt="%s" index="1">vga_y&lt;9:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">w_count&lt;7:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" filtered="1" delta="new" >Signal &lt;<arg fmt="%s" index="1">vga_x&lt;9&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">vga_y&lt;9:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">vga_x&lt;9&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">key_out</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">key_out</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">dbncr</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gamepad</arg>&gt;.
@@ -50,40 +44,40 @@ It will be removed from the design.
 It will be removed from the design.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">spd_ff_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">gtv</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">24 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;spd_ff_5&gt; &lt;spd_ff_6&gt; &lt;spd_ff_7&gt; &lt;spd_ff_8&gt; &lt;spd_ff_9&gt; &lt;spd_ff_10&gt; &lt;spd_ff_11&gt; &lt;spd_ff_12&gt; &lt;spd_ff_13&gt; &lt;spd_ff_14&gt; &lt;spd_ff_15&gt; &lt;spd_ff_16&gt; &lt;spd_ff_17&gt; &lt;spd_ff_18&gt; &lt;spd_ff_19&gt; &lt;spd_ff_20&gt; &lt;spd_ff_21&gt; &lt;spd_ff_22&gt; &lt;spd_ff_23&gt; &lt;spd_ff_24&gt; &lt;spd_ff_25&gt; &lt;spd_ff_26&gt; &lt;spd_ff_27&gt; &lt;spd_ff_28&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">spd_ff_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">gtv</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">24 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;spd_ff_5&gt; &lt;spd_ff_6&gt; &lt;spd_ff_7&gt; &lt;spd_ff_8&gt; &lt;spd_ff_9&gt; &lt;spd_ff_10&gt; &lt;spd_ff_11&gt; &lt;spd_ff_12&gt; &lt;spd_ff_13&gt; &lt;spd_ff_14&gt; &lt;spd_ff_15&gt; &lt;spd_ff_16&gt; &lt;spd_ff_17&gt; &lt;spd_ff_18&gt; &lt;spd_ff_19&gt; &lt;spd_ff_20&gt; &lt;spd_ff_21&gt; &lt;spd_ff_22&gt; &lt;spd_ff_23&gt; &lt;spd_ff_24&gt; &lt;spd_ff_25&gt; &lt;spd_ff_26&gt; &lt;spd_ff_27&gt; &lt;spd_ff_28&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">spd_ff_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">gtv</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">spd_ff_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">gtv</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_column_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_control</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">pixel_column_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_control</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_row_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_control</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">pixel_row_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_control</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_row_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_control</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">pixel_row_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_control</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_row_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_control</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">pixel_row_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_control</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_row_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_control</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">pixel_row_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_control</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">spd_ff_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gtv</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">spd_ff_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gtv</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">spd_ff_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gtv</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">spd_ff_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gtv</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">spd_ff_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gtv</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">spd_ff_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gtv</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">spd_ff_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gtv</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">spd_ff_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gtv</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">spd_ff</arg>&lt;<arg fmt="%d" index="2">28</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">soft_gtv</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">spd_ff</arg>&lt;<arg fmt="%d" index="2">28</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">soft_gtv</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">enable_move_sync</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">game_control</arg>&gt;.
@@ -104,37 +98,37 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">posy_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">game_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">vga_control/pixel_row_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">vga_control/pixel_row_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">vga_control/pixel_row_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">vga_control/pixel_row_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">vga_control/pixel_row_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">vga_control/pixel_row_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">vga_control/pixel_row_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">vga_control/pixel_row_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">vga_control/pixel_column_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">vga_control/pixel_column_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" filtered="1" delta="old" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">navigation/gtv/gtv_cnt_ff_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">gamepad/dbncr/dly_counter/count_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
@@ -218,7 +212,7 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="2677" filtered="1" delta="new" >Node &lt;<arg fmt="%s" index="1">gamepad/register/Q_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zork</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

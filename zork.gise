@@ -99,7 +99,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463184705" xil_pn:in_ck="2520840479365018179" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5911102604605201819" xil_pn:start_ts="1463184686">
+    <transform xil_pn:end_ts="1463185456" xil_pn:in_ck="2520840479365018179" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5911102604605201819" xil_pn:start_ts="1463185437">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -121,7 +121,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463184711" xil_pn:in_ck="-5170402421034947627" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1189865731942033685" xil_pn:start_ts="1463184705">
+    <transform xil_pn:end_ts="1463185495" xil_pn:in_ck="-5170402421034947627" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1189865731942033685" xil_pn:start_ts="1463185490">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -131,11 +131,9 @@
       <outfile xil_pn:name="zork.ngd"/>
       <outfile xil_pn:name="zork_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1463184716" xil_pn:in_ck="-5170402421034947626" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1463184711">
+    <transform xil_pn:end_ts="1463185501" xil_pn:in_ck="-5170402421034947626" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1463185495">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="zork.pcf"/>
       <outfile xil_pn:name="zork_map.map"/>
@@ -146,7 +144,7 @@
       <outfile xil_pn:name="zork_summary.xml"/>
       <outfile xil_pn:name="zork_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1463184729" xil_pn:in_ck="8920546955627017711" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1463184716">
+    <transform xil_pn:end_ts="1463185514" xil_pn:in_ck="8920546955627017711" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1463185501">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -160,7 +158,7 @@
       <outfile xil_pn:name="zork_pad.txt"/>
       <outfile xil_pn:name="zork_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1463184735" xil_pn:in_ck="5347393092361" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1463184729">
+    <transform xil_pn:end_ts="1463185520" xil_pn:in_ck="5347393092361" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1463185514">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -172,7 +170,7 @@
       <outfile xil_pn:name="zork.drc"/>
       <outfile xil_pn:name="zork.ut"/>
     </transform>
-    <transform xil_pn:end_ts="1463184729" xil_pn:in_ck="-5170402421034947758" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1463184726">
+    <transform xil_pn:end_ts="1463185514" xil_pn:in_ck="-5170402421034947758" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1463185512">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

@@ -33,8 +33,8 @@ module game_control(
 
   reg [2:0] posx;               // Positions that will be used to determine the address
   reg [1:0] posy;               // Positions that will be used to determine the address
-  reg [2:0] new_posx;           // Positions modified by the movement
-  reg [1:0] new_posy;           // Positions modified by the movement
+  wire [2:0] new_posx;           // Positions modified by the movement
+  wire [1:0] new_posy;           // Positions modified by the movement
   reg [2:0] dir;                // Direction of the movement
   reg enable_move_sync;         // Movement enable synchronized with the 50MHz clock
   wire valid_move;              // Validates off-bounds movements
@@ -67,20 +67,16 @@ module game_control(
     (dir == RIGHT && posx < grid_max_x)
   );
 
-  // To connect the forbidden_move block
-  wire [2:0] positionx;
-  wire [1:0] positiony;
-
   // Verifies if the next movement is forbidden by the map design
   // If the movement is valid, the player moves according to the direction
   // given by the key pressed
   forbidden_moves forbidden_moves (
-    .posx(posx),
-    .posy(posy),
-    .dir(dir),
-    .valid(valid_move),
-    .positionx(positionx),
-    .positiony(positiony)
+    .posx( posx ),
+    .posy( posy ),
+    .dir( dir ),
+    .valid( valid_move ),
+    .positionx( new_posx ),
+    .positiony( new_posy )
   );
 
   // always @ ( * ) begin
@@ -105,8 +101,8 @@ module game_control(
       end
     else
       begin
-        posx <= positionx;
-        posy <= positiony;
+        posx <= new_posx;
+        posy <= new_posy;
       end
   end
 

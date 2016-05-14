@@ -90,30 +90,13 @@
     <transform xil_pn:end_ts="1463255067" xil_pn:in_ck="-227311405269559639" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1463255067">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="PIPO.v"/>
-      <outfile xil_pn:name="bin_hex.v"/>
-      <outfile xil_pn:name="debouncer.v"/>
-      <outfile xil_pn:name="font_rom.v"/>
-      <outfile xil_pn:name="forbidden_moves.v"/>
-      <outfile xil_pn:name="fsm.v"/>
-      <outfile xil_pn:name="fsm_stuck.v"/>
-      <outfile xil_pn:name="game_control.v"/>
-      <outfile xil_pn:name="image_driver.v"/>
-      <outfile xil_pn:name="ipcore_dir/labyrinth_ram.v"/>
-      <outfile xil_pn:name="key_decoder.v"/>
-      <outfile xil_pn:name="keyboard_decoder.v"/>
-      <outfile xil_pn:name="mod_n.v"/>
-      <outfile xil_pn:name="multiplexed_display.v"/>
-      <outfile xil_pn:name="mux_4to1_4bits.v"/>
-      <outfile xil_pn:name="one_cold.v"/>
-      <outfile xil_pn:name="soft_gtv.v"/>
-      <outfile xil_pn:name="tb_forbidden.v"/>
-      <outfile xil_pn:name="tb_fsm_mv.v"/>
-      <outfile xil_pn:name="tb_game_control.v"/>
-      <outfile xil_pn:name="tb_vga.v"/>
-      <outfile xil_pn:name="vga_control.v"/>
-      <outfile xil_pn:name="zork.v"/>
-      <outfile xil_pn:name="zork_game_test.v"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1463255070" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6320454098117034137" xil_pn:start_ts="1463255070">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -130,45 +113,34 @@
     <transform xil_pn:end_ts="1463255070" xil_pn:in_ck="-227311405269559639" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1463255070">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="PIPO.v"/>
-      <outfile xil_pn:name="bin_hex.v"/>
-      <outfile xil_pn:name="debouncer.v"/>
-      <outfile xil_pn:name="font_rom.v"/>
-      <outfile xil_pn:name="forbidden_moves.v"/>
-      <outfile xil_pn:name="fsm.v"/>
-      <outfile xil_pn:name="fsm_stuck.v"/>
-      <outfile xil_pn:name="game_control.v"/>
-      <outfile xil_pn:name="image_driver.v"/>
-      <outfile xil_pn:name="ipcore_dir/labyrinth_ram.v"/>
-      <outfile xil_pn:name="key_decoder.v"/>
-      <outfile xil_pn:name="keyboard_decoder.v"/>
-      <outfile xil_pn:name="mod_n.v"/>
-      <outfile xil_pn:name="multiplexed_display.v"/>
-      <outfile xil_pn:name="mux_4to1_4bits.v"/>
-      <outfile xil_pn:name="one_cold.v"/>
-      <outfile xil_pn:name="soft_gtv.v"/>
-      <outfile xil_pn:name="tb_forbidden.v"/>
-      <outfile xil_pn:name="tb_fsm_mv.v"/>
-      <outfile xil_pn:name="tb_game_control.v"/>
-      <outfile xil_pn:name="tb_vga.v"/>
-      <outfile xil_pn:name="vga_control.v"/>
-      <outfile xil_pn:name="zork.v"/>
-      <outfile xil_pn:name="zork_game_test.v"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1463255074" xil_pn:in_ck="-227311405269559639" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6026111228432936723" xil_pn:start_ts="1463255070">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="tb_forbidden_beh.prj"/>
-      <outfile xil_pn:name="tb_forbidden_isim_beh.exe"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1463255074" xil_pn:in_ck="4283366638216899217" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2356344586149547478" xil_pn:start_ts="1463255074">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="tb_forbidden_isim_beh.wdb"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1463187686" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1463187686">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -198,7 +170,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463254717" xil_pn:in_ck="3932219470446307094" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5911102604605201819" xil_pn:start_ts="1463254696">
+    <transform xil_pn:end_ts="1463264660" xil_pn:in_ck="606421939594496065" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5911102604605201819" xil_pn:start_ts="1463264643">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -216,11 +188,11 @@
       <outfile xil_pn:name="zork.xst"/>
       <outfile xil_pn:name="zork_xst.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1463187705" xil_pn:in_ck="6585738851336714057" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="123229027436410376" xil_pn:start_ts="1463187705">
+    <transform xil_pn:end_ts="1463263667" xil_pn:in_ck="6585738851336714057" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="123229027436410376" xil_pn:start_ts="1463263667">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463254724" xil_pn:in_ck="-5170402421034947627" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1189865731942033685" xil_pn:start_ts="1463254717">
+    <transform xil_pn:end_ts="1463264665" xil_pn:in_ck="-5170402421034947627" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1189865731942033685" xil_pn:start_ts="1463264660">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -230,7 +202,7 @@
       <outfile xil_pn:name="zork.ngd"/>
       <outfile xil_pn:name="zork_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1463254733" xil_pn:in_ck="-5170402421034947626" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1463254724">
+    <transform xil_pn:end_ts="1463264670" xil_pn:in_ck="-5170402421034947626" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1463264665">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -245,7 +217,7 @@
       <outfile xil_pn:name="zork_summary.xml"/>
       <outfile xil_pn:name="zork_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1463254749" xil_pn:in_ck="8920546955627017711" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1463254733">
+    <transform xil_pn:end_ts="1463264686" xil_pn:in_ck="8920546955627017711" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1463264670">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -259,7 +231,7 @@
       <outfile xil_pn:name="zork_pad.txt"/>
       <outfile xil_pn:name="zork_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1463254756" xil_pn:in_ck="5347393092361" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1463254749">
+    <transform xil_pn:end_ts="1463264693" xil_pn:in_ck="5347393092361" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1463264686">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -272,10 +244,15 @@
       <outfile xil_pn:name="zork.ut"/>
     </transform>
     <transform xil_pn:end_ts="1463254763" xil_pn:in_ck="5347393079507" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1463254762">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForced"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1463254749" xil_pn:in_ck="-5170402421034947758" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1463254746">
+    <transform xil_pn:end_ts="1463264686" xil_pn:in_ck="-5170402421034947758" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1463264683">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

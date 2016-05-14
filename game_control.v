@@ -23,7 +23,11 @@ module game_control(
   input rst_async_la_i,
   input [3:0] key_in,
   input enable_move,
-  output [4:0] address
+  output reg [4:0] address,
+  output [4:0] step_count,
+  output out_of_steps,
+  output reg in_key_pos,
+  output reg in_exit_pos
     );
 
   localparam  [3:0] grid_max_x = 7;
@@ -81,14 +85,14 @@ module game_control(
     .positiony( new_posy )
   );
 
-  // always @ ( * ) begin
-  //   if(valid_move)
-  //     new_posx <= positionx;
-  //     new_posy <= positiony;
-  //   else
-  //     new_posx <= posx;
-  //     new_posy <= posy;
-  // end
+  // Counts the steps the player has left
+  mod_n_backwards #( .DW(5), .N(30)) step_counter(
+    .enable_i(enable_move_sync & valid_move),
+    .clk_50MHz_i(clk_50MHz_i),
+    .rst_async_la_i(rst_async_la_i),
+    .enable_o(out_of_steps),
+    .count_o(step_count)
+  );
 
 
   // When the game is reseted, the player starts at the right bottom of the grid,
@@ -109,6 +113,10 @@ module game_control(
   end
 
   // The addres is determined by the concatenation of both coordinates
-  assign address = { posy, posx };
+  always @ ( posedge clk_50MHz_i ) begin
+    in_key_pos <= ( (posx == 3'd0) && (posy == 2'd3) );
+    in_exit_pos <= ( (posx == 3'd4) && (posy == 2'd0) );
+    address <= { posy, posx };
+  end
 
   endmodule

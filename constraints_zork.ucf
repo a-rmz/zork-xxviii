@@ -2,6 +2,14 @@
 #ZORK_XXVIII
 NET "clk_50MHz_i" LOC = "B8";
 NET "rst_async_la_i" LOC = "P11";
+NET "has_key_o[0]" LOC = "M5";
+NET "has_key_o[1]" LOC = "M11";
+NET "has_key_o[2]" LOC = "P7";
+NET "has_key_o[3]" LOC = "P6";
+NET "has_key_o[4]" LOC = "N5";
+NET "has_key_o[5]" LOC = "N4";
+NET "has_key_o[6]" LOC = "P4";
+NET "has_key_o[7]" LOC = "G1";
 
 #KEYBOARD
 #IN
